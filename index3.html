@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="generator" content="Mobirise v4.12.4, mobirise.com">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		<meta name="description" content="Part 3 of the Dala'il Al Khayrat for Monday. Read in English, Arabic or transliteration.">
+		<title>Dalail Al Khayrat - Part 3</title>
+		<link rel="shortcut icon" href="assets/images/DK_logo.png" type="image/x-icon">
+		<link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+		<link rel="stylesheet" href="assets/socicon/css/styles.css">
+		<link rel="stylesheet" href="assets/tether/tether.min.css">
+		<link rel="stylesheet" href="assets/animatecss/animate.min.css">
+		<link rel="stylesheet" href="assets/dropdown/css/style.css">
+		<link rel="stylesheet" href="assets/theme/css/style.css">
+		<link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
+		<link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+		<!-- Docs styles -->
+		<link rel="stylesheet" href="assets/dist/demo/dist/demo.css" />
+		<link rel="stylesheet" href="assets/main_v12.css">
+
+
+		<script src="assets/js/jquery-3.5.1.min.js"></script>
+		<script>
+			function playTranscript() {
+				var dialogueTimings = [0, 19.5, 28, 38, 61, 107, 118, 123, 130.5, 151, 181, 206.5, 238, 250, 257.5, 266.5, 282, 293, 349.5, 360, 439, 446.5, 454, 462, 496, 506.5, 549, 576, 587, 601, 614, 648.9, 649, 678.5, 710, 739, 767.5, 810, 851, 864, 875],
+				dialogues = document.querySelectorAll('#MyP>p.arabicText'),
+				transcriptWrapper = document.querySelector('#MyP'),
+				audio = document.querySelector('#player'),
+				previousDialogueTime = -1;
+
+				var currentDialogueTime = Math.max.apply(Math, dialogueTimings.filter(function (v) {
+					return v <= audio.currentTime
+				}));
+
+				if (previousDialogueTime !== currentDialogueTime) {
+					previousDialogueTime = currentDialogueTime;
+					var currentDialogue = dialogues[dialogueTimings.indexOf(currentDialogueTime)];
+					transcriptWrapper.scrollTop = currentDialogue.offsetTop - 50;
+					var previousDialogue = document.getElementsByClassName('speaking')[0];
+					if (previousDialogue !== undefined) previousDialogue.className = previousDialogue.className.replace('speaking', '');
+					currentDialogue.className += ' speaking';
+				}
+			};
+		</script>
+		<script>
+			function playFrom(t){
+				myAudio=document.getElementById('player');
+				myAudio.currentTime = t;
+				myAudio.play();
+			};
+		</script>
+	</head>
+	<body onmousedown="return false" onselectstart="return false">
+		<style>
+            .progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #ad586d;
+  width: 0%;
+}
+            
+            .progress-container.dark-mode {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar.dark-mode {
+  height: 8px;
+  background: #ad586d !important;
+  width: 0%;
+}
+            
+			.dark-mode {
+				background-color: #424242 !important;
+				color: white !important;
+			}
+			a.dark-mode:hover {
+				color: #999999 !important;
+			}
+			.btn-primary.dark-mode {
+				border-color: #ffffff !important;
+			}
+
+			.btn-primary.dark-mode:hover {
+				border-color: transparent !important;
+			}
+			.nav-item.dark-mode a:hover {
+				color: #999999 !important;
+			}
+			.hamburger span.dark-mode {
+				background-color: #ffffff !important;
+			}
+			.navbar-toggler.dark-mode:hover span {
+				background-color: #999999 !important;
+			}
+			.fa {
+				margin: 0;
+				position: fixed;
+				
+				top: 31px;
+				color: #4a5764;
+				border: 1px solid #ccc !important;
+				border-radius: 10px;
+				box-shadow: 0px 4px 10px rgb(0 0 0 / 33%);
+				padding:4px 1px 4px 4px;
+				background: #F8F8F8	;
+				z-index: 9999;
+				left: 94%;
+				cursor: pointer;
+				transform: translate(-50%, -50%);
+				font-size: 22px;
+			}
+
+			.fa:hover {
+				color: #fff;
+				box-shadow: 0px -4px 10px rgb(0 0 0 / 33%);
+				background: #ccc;
+			}
+			.fa.dark-mode {
+				margin: 0;
+				position: fixed;
+				top: 31px;
+				color: #4a5764 !important;
+				border: 1px solid #ccc !important;
+				border-radius: 10px;
+				box-shadow: 0px 4px 10px rgb(255 255 255 / 33%) !important;
+				padding:4px 1px 4px 4px;
+				background: #F8F8F8 !important;
+				z-index: 9999;
+				left: 94%;
+				cursor: pointer;
+				transform: translate(-50%, -50%);
+				font-size: 22px;
+			}
+
+			.fa.dark-mode:hover {
+				color: #fff !important;
+				box-shadow: 0px -4px 10px rgb(255 255 255 / 33%) !important;
+				background: #ccc !important;
+			}
+		</style>
+		<script>
+		$(document).ready(function() {
+			var darkmode = JSON.parse(localStorage.getItem("darkmode"));
+			if (darkmode) {
+				$('body > *').not('.modal').not('.modal *').not('.langSettings').not('.langSettings *').not('.hamburger').not('.icon-custom').addClass("dark-mode");
+				$('body > * *').not('.modal').not('.modal *').not('.langSettings').not('.langSettings *').not('.hamburger').not('.icon-custom').addClass("dark-mode");
+				$('.langSettings').addClass("dark-mode");
+				setTimeout(function() {$('.plyr *').addClass("dark-mode")}, 500);
+				$('.dark-mode-toggler').prop('checked', true);
+			}
+
+			// Dark Mode Toggler
+			$('.dark-mode-toggler').click(function () {
+				if ($(this).is(':checked')) {
+					$('body > *').not('.modal').not('.modal *').not('.langSettings').not('.langSettings *').not('.hamburger').not('.icon-custom').addClass("dark-mode");
+					$('body > * *').not('.modal').not('.modal *').not('.langSettings').not('.langSettings *').not('.hamburger').not('.icon-custom').addClass("dark-mode");
+					$('.langSettings').addClass("dark-mode");
+					localStorage.setItem("darkmode", true);
+				} else {
+					$('.dark-mode').removeClass("dark-mode");
+					localStorage.setItem("darkmode", false);
+				}
+			});
+		});
+		</script>
+ <script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+
+		<style>
+			.navbar-toggler:hover span {
+				background-color: #800020  !important;
+			}
+			.icon-mosque {
+				background-image: url('data:img/svg;base64,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');
+				background-size: 100%;
+				height: 20px;
+				width: 17px;
+				display: inline-block !important;
+			}
+
+			a:hover .icon-mosque {
+				filter: invert(0.3);
+			}
+
+			.dark-mode .icon-mosque {
+				filter: invert(1) !important;
+			}
+
+			a.dark-mode:hover > .icon-mosque {
+				filter: invert(0.61) !important;
+			}
+		</style>
+
+		<section class="menu cid-s4rX0tVglS" once="menu" id="menu2-7">
+			<nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top collapsed bg-color transparent">
+				
+				<div class="menu-logo">
+					<div class="navbar-brand">
+						<span class="navbar-caption-wrap" style="margin-top:0px;"><a class="navbar-caption text-black display-4" href="index.html"><span class="icon-custom icon-mosque"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Part 3 -<font size="5" face="Islamic"><b>  الحزب الثالث</font></b></a></span>
+					</div>
+				</div>
+
+                  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+
+			</nav>
+		</section>
+		<!-- Modal -->
+		<!-- The Modal -->
+		<div class="modal langSettingsModal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<div class="modal-header" style="height: 30px;">
+					<center>Settings</center>
+					<span class="close">&times;</span>
+				</div>
+				<div class="modal-body">
+					<button class="accordion active">Appearance</button>
+					<div class="panel" style="text-align: center; max-height: 44px;">
+						<div class="row">
+							<div class="column left">
+								<label class="switch">
+									<input class="dark-mode-toggler" type="checkbox">
+									<span class="toggle"></span>
+								</label>
+							</div>
+							<div class="column middle" style="text-align: center; white-space: nowrap;">
+								<h5>Dark Mode</h5>
+							</div>
+						</div>
+					</div>
+					<button class="accordion active">Translations</button>
+					<div class="panel" style="text-align: center ; max-height: 415px;">
+						<div class="row">
+							<div class="column left">
+								<label class="switch">
+									<input class="translation-checkbox" type="checkbox" id="translitCheck" data-classes="translit">
+									<span class="toggle"></span>
+								</label>
+							</div>
+							<div class="column middle" style="text-align: center;">
+								<h5>Transliteration</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="column left">
+								<label class="switch">
+									<input class="translation-checkbox" type="checkbox" id="transCheckID" data-classes="transID">
+									<span class="toggle"></span>
+								</label>
+							</div>
+							<div class="column middle" style="text-align: center;">
+								<h5>Bahasa</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="column left">
+								<label class="switch">
+									<input class="translation-checkbox" type="checkbox" id="transCheck" data-classes="trans">
+									<span class="toggle"></span>
+								</label>
+							</div>
+							<div class="column middle" style="text-align: center;">
+								<h5>English</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="column left">
+								<label class="switch">
+									<input class="translation-checkbox" type="checkbox" id="transCheckFA" data-classes="transFA">
+									<span class="toggle"></span>
+								</label>
+							</div>
+							<div class="column middle" style="text-align: center;">
+								<h5>Farsi</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="column left">
+								<label class="switch">
+									<input class="translation-checkbox" type="checkbox" id="transCheckFR" data-classes="transFR">
+									<span class="toggle"></span>
+								</label>
+							</div>
+							<div class="column middle" style="text-align: center;">
+								<h5>French</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="column left">
+								<label class="switch">
+									<input class="translation-checkbox" type="checkbox" id="transCheckTR" data-classes="transTR">
+									<span class="toggle"></span>
+								</label>
+							</div>
+							<div class="column middle" style="text-align: center;">
+								<h5>Turkish</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="column left">
+								<label class="switch">
+									<input class="translation-checkbox" type="checkbox" id="translitCheckTR" data-classes="translitTR">
+									<span class="toggle"></span>
+								</label>
+							</div>
+							<div class="column middle" style="text-align: center;">
+								<h5>Turkish (translit)</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="column left">
+								<label class="switch">
+									<input class="translation-checkbox" type="checkbox" id="transCheckUR" data-classes="transUR">
+									<span class="toggle"></span>
+								</label>
+							</div>
+							<div class="column middle" style="text-align: center;">
+								<h5>Urdu</h5>
+							</div>
+						</div>
+					</div>
+					<button class="accordion active">Font sizes</button>
+					<div class="panel" style="text-align: center; max-height: 92px;">
+						<div class="row">
+							<div class="column left">
+								<h5 id="button2" value="smaller" class="changeFontSize" data-lang="Arabic" data-increment="minus"> &#8854;&nbsp;&nbsp;&nbsp;</h5>
+							</div>
+							<div class="column middle" style="vertical-align: middle;">
+								<h5>Arabic 
+                                <!--    <span class="arabicFontSize fontSize"></span> -->
+                                </h5>
+							</div>
+							<div class="column right">
+								<h5 id="button1" value="larger" class="changeFontSize" data-lang="Arabic" data-increment="plus">&nbsp;&nbsp;&nbsp;&#8853;</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="column left">
+								<h5 id="button4" value="smaller" class="changeFontSize" data-lang="Others" data-increment="minus">&#8854;&nbsp;&nbsp;&nbsp;</h5>
+							</div>
+							<div class="column middle">
+								<h5>Latin 
+                                <!--    <span class="englishFontSize fontSize"></span> -->
+                                </h5>
+							</div>
+							<div class="column right">
+								<h5 id="button3" value="larger" class="changeFontSize" data-lang="Others" data-increment="plus">&nbsp;&nbsp;&nbsp;&#8853;</h5>
+							</div>
+						</div>
+					</div>
+					<button class="accordion active">Arabic font style</button>
+					<div class="panel" style="text-align: center; max-height: 92px;">
+						<div class="row">
+							<div class="column left">
+								<label class="container" >
+									<input type="radio" name="radio" class="changeArabicFont" value="Islamic">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+							<div class="column middle" style="text-align: center;">
+								<h5>Uthmani</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="column left">
+								<label class="container">
+									<input type="radio" name="radio" class="changeArabicFont" value="Indopak">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+							<div class="column middle" style="text-align: center;">
+								<h5>IndoPak</h5>
+							</div>
+						</div>
+					</div> 
+				</div>
+				<div class="modal-footer" style="height: 20px;"></div>
+			</div>
+		</div>
+		<!-- Trigger/Open The Modal -->
+		<p class = "fa fa-gear langSettings">&nbsp;</p>
+		<!-- Page header for each individual part ============================================ -->
+		<!-- Part 1 ========================================================================= -->
+		<h1>Dala'il al Khayrat Wednesday</h1>
+		<div class="part" id="Part3">
+			<h3 dir="ltr"></h3>
+		</div>
+		<!-- Audio -->
+		<main style="width: 100%;">
+			<div id="container" style="width: 80%;">
+				<audio controls crossorigin ontimeupdate="playTranscript()" playsinline id="player">
+				<source src="assets/audio/Part3_AHK.mp3">
+			</div>
+		</main>
+		<script type="module" src="assets/dist/demo/dist/demo.js" crossorigin="anonymous"></script>
+		 <div id="transcriptWrapper">
+			<div id="MyP" translate="no">
+				<!-- 1-->
+				<p class="numbers">1<span onclick="playFrom(0.0)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى رُوحِ سَيِّدِنَا مُحَمَّدٍ فِي الأَرْوَاحِ، وَعَلَى جَسَدِهِ فِي الأَجْسَادِ، وَعَلَى قَبْرِهِ فِي القُبُورِ، وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā rūḥi sayyidinā Muḥammadin fil arwāḥi, wa ʿalā jasadihi fil ajsādi, wa ʿalā qabrihi fil qubūri, wa ʿalā ʿālihi wa ṣaḥbihi wa ṣallim.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim dan kesejahteraan atas Ruh Baginda kami Nabi Muhammad dalam berbagai Ruh dan atas jasad beliau SAW dalam berbagai jasad dan atas kubur beliau SAW dalam berbagai kubur dan atas keluarga dan sahabatnya.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless the soul of Sayyidina Muhammad among the souls, and bless his body among the bodies, and his grave among the graves, and his family and companions, and grant them peace.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span> درود بفرست بر جان پاک سردار مایان محمدؐ در جانها و برتن مبارک او در تنها و بر قبر شریف وی در قبرها و بر آل وی و یاران وی و سلام بفرست ۔ </p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur l'âme de Saïdina Mohammad parmi les âmes, sur son corps parmi les corps, sur sa tombe parmi les tombes, et sur sa famille et ses compagnons, et salue les.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz Muhammed’in ruhlar arasındaki rûhuna, cesetler arasındaki cesedine, kabirler arasındaki kabrine, onun âl-i’ne ashâbına salât ve selâm eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala rûhi Seyyidüna Muhammedin fil ervahi ve ala cesedihi fil ecsadi ve ala kabrihi fil kubûri ve ala alihi ve sahbihi ve sellim.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر روح سردار ہمارے محمدؐ کے بیچ روحوں کے اور اوپر جسم اُن کے کے بیچ جسموں کے اور اوپر قبر اُن کی کے بیچ قبروں کے اور اوپر اولاد اُن کی کے اور اصحاب اُن کے کے اور سلام۔</p>
+				<!-- 2-->
+				<p class="numbers">2<span onclick="playFrom(20.0)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ كُلَّمَا ذَكَرَهُ الذَّاكِرُونَ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammadin kullamā dhakarahudh dhākirūn.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda Nabi Muhammad SAW setiap ingat kepada Engkau orang-orang yang berdzikir.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Muhammad as many times as he is mentioned by those who do dhikr.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span> درود بفرست بر سردار مایان محمدؐ هرگاه یاد کنند او را یاد کنندگان۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Mohammad, autant que l'ont évoqué les évocateurs.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz Muhammed’e onu zikredenlerin her zikredişinde ona salât ve selâm eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidüna Muhammedin küllema zekerehüz zakirûne.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے جب یاد کریں اُن کو یاد کرنے والے۔</p>
+				<!-- 3-->
+				<p class="numbers">3<span onclick="playFrom(28.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ كُلَّمَا غَفَلَ عَنْ ذِكْرِهِ الغَافِلُونَ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammadin kullamā ghafala ʿan dhikrihil ghāfilūn.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda Nabi Muhammad setiap lupa dari mengingat Allah orang-orang yang lupa.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Muhammad as many times as the heedless neglect his mention.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span>  درود بفرست بر سردار مایان محمدؐ هر گاه غفلت ورزند از یاد او غافلان۔ </p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Mohammad, autant qu'on omis de l'évoquer les distraits.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz Muhammed’i yâd edip hatırlamaktan gâfil olanların sayısınca ona salât eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidüna Muhammedin küllema gafele an zikrihil gafi lûne.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے جب غفلت کریں ذکر اُن کے سے غفلت کرنے والے۔</p>
+				<!-- 4-->
+				<p class="numbers">4<span onclick="playFrom(38.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الأُمِّيِّ وَأَزْوَاجِهِ أُمَّهَاتِ المُؤْمِنِينَ، وَذُرِّيَّتِهِ وَأَهْلِ بَيْتِهِ، صَلَاةً وَسَلَامَاً لَا يُحْصَى عَدَدُهُمَا، وَلَا يَنْقَطِعُ مَدَدُهُمَا.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli wa ṣallim ʿalā sayyidinā Muḥammadin nabiyyil ummiyyi wa azwājihi ummahātil muʾminīna, wa dhurriyyatihi wa ahli baytihi, ṣalātan wa salāman lā yuḥṣa ʿadadahumā, wa lā yanqaṭiʿu madaduhumā.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Nabi Muhammad yang menjadi Nabi dan yang Ummi. Dan atas isteri-isteri beliau SAW yang menjadi ibu orang-orang mukmin, Dan atas keturunan dan Ahli Bait beliau SAW yaitu berupa Rahmat dan kesejateraan yang tidak terhitung bilangan keduany dan tidak putus-putus tambahan keduanya.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Muhammad, the Unlettered Prophet and his wives, the mothers of the believers, and his offspring and the Ahl Al-Bayt, with a blessing and peace that cannot be counted and that is never interrupted.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span>  درود بفرست و سلام بفرست برسردار مایان محمدؐ که پیغمبر ناخوانده و نانویشنده است و زنان او که مادران مؤمنان اند و ذریت وی و اهلِ بیت وی درووی و سلامیکه ضبط کرده نشود با برکت و آرامشی که مقدارش بی شمار است و هرگز قطع نمی شود.۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, répands ta prière et ton salut sur Saïdina Mohammad le prophète illettré, ses épouses mères des croyants, sur sa descendance et sur sa petite famille, Prière et salut, au nombre indéterminé et aux gracieusetés ininterrompues.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, ümmî nebî efendimiz Muhammed’e, mü’minlerin anneleri olan zevcelerine, zürriyetine, ehl-i beytine sonsuz salât ve selâmla salât eyle, selâm eyle, bereket ihsân eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ve sellim ve barik ala Seyyidüna Muhammedinin Nebiyyil Ümmiyyi, ve ezvacihi ümmehatil müminine ve zürriyetihi ve ehli beytihi salaten ve selamen la yühsa adete hüma vela yukdeu medete huma.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود اور سلام اور برکت بھیج اوپر سردار ہمارے محمدؐ نبی اُمّی کے اور بیویوں اُن کی کے جو مائیں ہیں مومنوں کی اور اولاد اُن کی کے اور اہلِ بیت اُن کے کے درود و سلام کہ نہ ضبط ہو سکے گنتی ان دونوں کی اور نہ منقطع ہو زیادتی ان دونوں کی۔</p>
+				<!-- 5-->
+				<p class="numbers">5<span onclick="playFrom(62.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَدَدَ مَا أَحَاطَ بِهِ عِلْمُكَ، وَأَحْصَاهُ كِتَابُكَ، صَلَاةً تَكُونُ لَهُ رِضَاءً، وَلِحَقِّهِ أَدَاءً، وَأَعْطِهِ الوَسِيلَةَ وَالفَضِيلَةَ، وَالدَّرَجَةَ الرَّفِيعَةَ، وَابْعَثْهُ <span>اللَّهُمَّ
+
+</span>
+ المَقَامَ المَحْمُودَ الَّذِي وَعَدْتَهُ، وَاجْزِهِ عَنَّا مَا هُوَ أَهْلُهُ، وَعَلَى جَمِيعِ إِخْوَانِهِ مِنَ النَّبِيِّينَ وَالصِّدِّيقِينَ وَالشُّهَدَاءِ وَالصَّالِحِينَ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammadin ʿadada ma aḥāṭa bihi ʿilmuka, wa aḥṣāhu kitābuka, ṣalātan takūnu lahu riḍāʾan, wa liḥaqqihi adāʾan, wa aʿṭihil wasīlata wal faḍīlata, waddarajatir rafīʿah. Wabʿath-hu <span>Allāhumma</span>l maqāmal maḥmūd alladhī waʿadtahu, wajzihi ʿannā mā huwa ahluhu, wa ʿalā jamīʿi ikhwānihi minan nabiyyīna waṣṣiddīqīna wash shuhadāʾi waṣṣāliḥīn.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda Nabi Muhammad menurut bilangan sesuatu yang meliputi Ilmu Engkau dan hitungan lisan Engkau yaitu Rahmat yang menyebabkan Ridho Engkau dan memenuhi Hak Engkau. Berilah kepadanya SAW Wasilah, keutamaan dan derajat yang Tinggi. Ya ALlah, Bangkitkanlah beliau SAW pada maqam yang terpuji yang Engkau janjikan. Balaslah beliau SAW dari kami di mana beliau adalah ahlinya. Dan atas saudara-saudara beliau dari pada Nabi, Shiddiqin, Syuhada' dan Sholihin.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Muhammad in quantity as great as what Your knowledge encompasses and what Your Book contains, with a blessing that pleases You and rewards him, and give him the means of mediation and virtue, and high degree, and raise him, <span>O Allah</span>, to the praiseworthy station which You promised him, and reward him with what he deserves on our behalf, and bless all of his brothers, the Prophets and the truthful ones, the martyrs and the righteous.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span>  درود بفرست بر سردار مایان محمدؐ بشمار چیزیکه فرارسیده است بآن علم تو و ضبط کرده است آنرا کتاب تو که باشد برای تو خوشنووی و برای حق او سبب ادای و بده اورا وسیله و بزرگی و پایۂ بلند و برانگیز اورا۔ <span>خدایا</span> در مقامی که ستوده شده است آن مقامی که وعده کردۂ تو اورا و پاداش ده او را مایان چیزی که او سزاوار اوست و برهمه برادران او از پیغمبران راستکاران و کشگتان در راه خدا و نیکو کاران۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Mohammad, autant que l'englobe ton savoir et que compte ton livre. Prière qui soit pour toi une satisfaction et pour lui une rétribution. Accorde lui l'influence l'éminence et la haute dignité. Ressuscite-le, <span>Ô Allah</span>, dans la position louable que tu lui a promise et récompense le, pour nous, tel qu'il en est digne; et prie sur ses frères prophètes, sincères, martyrs et pieux.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, ilminin kuşattığı ve Ku’ân-ı Kerîm’in bildirdiği gerçekler sayısınca ancak senin râzı olacağın ve kendisine lâyık olan salâtla efendimiz Muhammed’e salât eyle. Vesîle makâmını, fazîlet ve yüksek dereceyi ona ihsân eyle. Allahım, kendisine va’d ettiğin Makâm-ı Mahmûd’a onu ulaştır. Lâyık olduğu şekilde onu mükâfaatlandır. Nebîlerden, sıddıklardan, şehitlerden ve sâlihlerden olan bütün kardeşlerine de salât eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidüna Muhammedin adede ma ehata bihi ilmüke ve ahsahü kitabike salaten tekûnu leke rızaen ve li hakkıhi edaen.Ve a'tıhil vesileti vel fazileti vedderecetir- refi ati.Veb'ashü Allahümmel makamel Mahmûdellezi veadtehu ve eczihi anna ma hüve ehlühü. Ve ala cemi'i ihvanihi minen nebiyyine vessıddıkıyne veşşühedai vessalihine.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے بشمار اس کے کہ گھیرا اُس کو علم تیرے نے اور ضبط کیا اُس کو کتاب تیری نے۔ ایسا درود کہ ہو واسطے تیرے خوشنودی اور واسطے حق اُن کے کے اداء۔ اور عطا کر اُن کو وسیلہ اور بزرگی اور درجہ بلند۔ اور بھیج اُن کو الٰہی مقامِ محمود میں جسکا وعدہ کیا تُو نے اُن سے۔ اور جزا دے اُن کو ہم سے کہ وہ لائق اُن کے ہیں۔ اور اوپر تمام بھائیوں اُں کے کے نبیوں اور صدیقوں اور شہیدوں اور نیک بختوں سے۔</p>
+				<!-- 6-->
+				<p class="numbers">6<span onclick="playFrom(108.0)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَأَنْزِلْهُ المُنْزَلَ المُقَرَّبَ يَوْمَ القِيَامَةِ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammadin wa anzilhul munzalal muqarraba yawmal qiyāmah.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda Nabi Muhammad SAW, tempatkanlah beliau di tempat yang dekat dari Engkau di hari kiamat.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Muhammad and assign him the nearest abode on the Day of Rising.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span>  درود بفرست بر سردار مایان محمدؐ و فرود آر اورا درجای فرودآمدن که نزویک کرده شده است روز قیامت۔ </p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Mohammad et place le dans une position rapprochée de toi, le jour du jugement dernier.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz Muhammed’e salât eyle. Onu kıyâmet günü sana en yakın makâma yerleştir.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidina Muhammedin ve enzilhül münzelel mukarrebe yevmel kıyameti.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے اور نازل کر اُن کو ایسی منزل میں کہ مقرب ہو دن قیامت کے۔</p>
+				<!-- 7-->
+				<p class="numbers">7<span onclick="playFrom(118.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammad.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda Nabi Muhammad SAW</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Muhammad.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span>  درود بفرست بر سردار مایان محمدؐ۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Mohammad.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz Muhammed’e salât eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidina Muhammedin.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے۔</p>
+				<!-- 8-->
+				<p class="numbers">8<span onclick="playFrom(123.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ تَوِّجْهُ بِتَاجِ العِزِّ وَالرِّضَا وَالكَرَامَةِ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> tawwijhu bitājil ʿizzi warriḍā wal karāmah.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, mahkotailah beliau SAW dengan mahkota kebesaran, mahkota Ridho dan mahkota Kemuliaan.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, give him the crown of might, pleasure and nobility.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span>  زینت ده او را بپوشانیدن تاج خوشنووی و بزرگی۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, couronne le par la couronne, de l'honneur et la puissance, de l'agrément et de la noblesse.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, ona izzet, rızâ ve cömertlik tâcını giydir.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme tevvichü bitacir izzi rızai vel kerameti.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> عطا کر اُن کو تاج عزت اور رضا اور بزرگی کا۔</p>
+				<!-- 9-->
+				<p class="numbers">9<span onclick="playFrom(131.0)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ أَعْطِ لِسَيِّدِنَا مُحَمَّدٍ أَفْضَلَ مَا سَأَلَكَ لِنَفْسِهِ، وَأَعْطِ لِسَيِّدِنَا مُحَمَّدٍ أَفْضَلَ مَا سَأَلَكَ لَهُ أَحَدٌ مِنْ خَلْقِكَ، وَأَعْطِ لِسَيِّدِنَا مُحَمَّدٍ أَفْضَلَ مَا أَنْتَ مَسْئُولٌ لَهُ إِلَى يَوْمِ القِيَامَةِ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> aʿṭi lisayyidinā Muḥammadin afḍala mā saʾalaka li nafsihi, wa aʿṭi lisayyidinā Muḥammadin afḍala mā saʾalaka lahu aḥadun min khalqika, wa aʿṭi lisayyidinā Muḥammadin afḍala mā anta masʾūlun lahu ilā yawmil qiyāmah.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, anugerahilah buat Baginda kami Nabi Muhammad SAW seutama-utama yang dimohon beliau SAW buat diri beliau SAW sendiri. Dan anugerahilah buat Baginda kami Nabi Muhammad SAW seutama-utama sesuatu yang Engkau adalah Tuhan yang diminta sampai hari kiamat.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, give Sayyidina Muhammad the best of what he asked for himself, and give Sayyidina Muhammad the best of what any of Your creation has ever asked for him, and give Sayyidina Muhammad the best of what is asked of You for him until the Day of Resurrection.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span>  بده مرسردار مایان محمدؐ را بزرگترین چیزهاکه سوال کرده است ترا برای ذات خود و بده مررئیس مایان محمدؐ را بهترین انچه سوال کرده است ترا برای اویکی از آفریدگان تو و بده مرسردار مایان محمدؐ را بزرگترین چیزیکه ترا سوال کرده شده است برای او تا روز قیامت۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, accorde à Saïdina Mohammad le meilleur de ce qu'il t'a demandé pour lui même. Accorde à Saïdina Mohammad le meilleur de ce que t'a demandé pour lui l'une de tes créatures. Accorde à Saïdina Mohammad, le meilleur de ce qui t'es demandé, depuis la création jusqu'au jour du jugement dernier.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz Muhammed’e kendisi için senden istediği şeylerin en fazîletlisini ona ihsân eyle. Allahım, herhangi bir kulunun efendimiz Muhammed için senden istediği şeylerin en fazîletlisini de ona ihsân eyle. Allahım, efendimiz Muhammed’e kıyâmet gününe kadar senden istenilmiş olanların en fazîletlisini kendisine ihsân eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme a'ti li Seyyidina Muhammedin efdale ma seeleke linefsihi. Ve a'ti li Seyyidüna Muhammedin efdale ma seeleke lehü ehaden min halkıke. Ve a'ti li Seyyidüna Muhammedin efdale ma ente mesûlün lehü ila yevmil kıyameti.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> دے واسطے سردار ہمارے محمدؐ کے جو افضل ہے اُسکا کہ سوال کیا ہے آپ نے واسطے ذات اپنی کے اور عطا کر واسطے سردار ہمارے محمدؐ کے جو افضل ہے اسکا کہ سوال کیا تُجھ سے واسطے اُن کے کسی نے مخلوق تیری سے۔ اور عطا کر واسطے سردار ہمارے محمدؐ کے افضل اس کا کہ تُو سوال کیا گیا ہے واسطے اُن کے روزِ قیامت تک۔</p>
+				<!-- 10-->
+				<p class="numbers">10<span onclick="playFrom(151.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَسَيِّدِنَا آدَمَ وَسَيِّدِنَا نُوحٍ وَسَيِّدِنَا إِبْرَاهِيمَ وَسَيِّدِنَا مُوسَى وَسَيِّدِنَا عِيسَى، وَمَا بَيْنَهُمْ مِنَ النَّبِيِّينَ وَالمُرْسَلِينَ، صَلَوَاتُ اللَّهِ وَسَلَامُهُ عَلَيْهِمْ أَجْمَعِينَ (3) </p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammadin wa sayyidinā Ādama wa sayyidinā Nūḥin wa sayyidinā Ibrāhīma wa sayyidinā Mūsā wa sayyidinā ʿĪsā, wa mā baynahum minan nabiyyīna wal mursalīna, ṣalawātuLlahi wa salāmuhu ʿalayhim ajmaʿīn (3).</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda kami Nabi Muhammad SAW, Nabi Adam, Nabi Nuh, Nabi Ibrahim, Nabi Musa, Nabi Isa, dan orang-orang diantara mereka, dari golongan para Nabi dan Rasul (mudah-mudah Rahmat dan kesejahteraan Allah terlimpahkan atas mereka seluruhnya) 3x</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Muhammad, and Sayyidina Adam, and Sayyidina Nuh, and Sayyidina Ibrahim, and Sayyidina Musa and Sayyidina 'Isa, and the Prophets and Messengers between them, may the blessing of Allah and his peace be upon all of them (3 times).</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span>  درود بفرست بر رئیس مایان محمدؐ و آدمؑ و نوحؑ و ابراهیمؑ و موسیٰؑ و عیسیٰؑ و کسانیکه درمیان ایشان بودند از انبیا و مرسلان درود های خدا و سلام او بر ایشان همه (این راسه بار بخوان)۔ </p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Mohammad, Saïdina Adam, Saïdina Noh, Saïdina Ibrahim, Saïdina Moussa, Saïdina Issa, et les prophètes et les envoyés qui sont venus entre leurs époques. Prière d'Allah et son salut sur eux tous.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz Muhammed’e; Âdem, Nûh, İbrâhîm, Mûsâ, ve Îsâ’ya, bunlar arasındaki bütün nebîlere rasullere salât eyle. Allâh’ın salât ve selâmı onların hepsinin üzerine olsun.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidina Muhammedin ve Seyyidüna Ademe ve Seyyidüna Nûhin ve Seyyidüna İbrahime ve Seyyidüna Musa ve Seyyidüna İsa ve ma beynehüm minen nebiyyine vel mürseline salavatullahi ve selamühü aleyhim ecmaine.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے اور سردار ہمارے آدمؑ اور سردار ہمارے نوحؑ اور سردار ہمارے ابراہیمؑ اور سردار ہمارے موسیٰؑ اور سردار ہمارے۔ عیسیٰؑ اور جو درمیان اُں کے ہیں۔ نبیوں سے اور رسولوں سے درود اللہ کا۔ اور سلام اُس کے اوپر اُن سب کے تین بار پڑھے۔</p>
+				<!-- 11-->
+				<p class="numbers">11<span onclick="playFrom(181.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى أَبِينَا سَيِّدِنَا آدَمَ وَأُمِّنَا سَیِّدَتِنَا حَوَّاءَ، صَلَاةَ مَلَائِکَتِكَ، وَأَعْطِهِمَا مِنَ الرِّضْوَانِ حَتَّى تُرْضِيَهُمَا، وَاجْزِهِمَا <span>اللَّهُمَّ
+
+</span>
+ أَفْضَلَ مَا جَازَيْتَ بِهِ أَبَاً وَأُمَّاً عَنْ وَلَدَيْهِمَا.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā abīnā sayyidinā Ādama wa umminā Sayyidatinā Hawwāʾa, ṣalātan malāʾikatika wa aʿṭihimā minar riḍwāni ḥatta turḍiyahumā, wajzihimā <span>Allāhumma</span> afḍala mā jāzayta bihi aban wa umman ʿan waladayhimā.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah limpahkanlah atas Bapak kami Nabi Adam as dan ibu kami Hawwa sebagaimana Rahmat yang Engkau berikan kepada para Malaikat Engkau. Dan anugerahilah keduanya keridhoan hingga Engkau Ridho kepada keduanya.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless our father Sayyidina Adam and our mother Sayyidatina Hawwa', with the blessing of the angels, and give them Your divine grace in as much as You are pleased with them, and reward them, <span>O Allah</span>, with the best of what you reward a mother and father through their offspring.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span>  درود بفرست بر پدر مایان آدم و مادر مایان حّوا مانند دروویکه می فرستی برفشتگان خود و بده آن هردو را از خوشنووی تا آنکه خوشنود گردانی آن هردو را و پاداش ده آن هردورا۔ خدایا بزرگترین چیزیکه پاداش دادۂ با او پدری و مادری را از دو پسران ۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur notre père Saïdina Adam et notre mère Saïdatouna Hawâ (Eve), prière de tes anges. Accorde leur, de l'agrément jusqu'à ce qu'ils soient satisfaits, et récompense les, de la meilleure récompense que tu as accordée à des parents, pour leur enfants.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz Âdem babamıza, annemiz Havvâ’ya meleklerinin salâtı kadar salât eyle. Allahım, efendimiz Âdem babamızı ve annemiz Havvâ’yı en yüce firdevs cennetine koyup üstün nîmetlerde râzı edinceye kadar, onlara bol rahmet ve kereminden ihsân eyle. Allahım, ana-babayı çocukları sâyesinde mükâfaatlandırdığın şeylerin en fazîletlisiyle onları mükâfaatlandır.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala ebina Seyyidüna Ademe ve ümmina Seyyidetüna Havvae salate melaiketike ve a'tıhima miner rıdvanil hatta türdiyehüma ve eczi hima. Allahümme efdale ma cazeyte bihi eben ve ümmen an veledeyhima.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج باپ ہمارے سردار ہمارے آدمؑ کے اور مان ہماری سردار ہماری حّوا ؑ کے۔ درود فرشتوں تیرے کا اور عطا کر اُن دونوں کو خوشنودی سے یہاں تک کہ خوش کرے تُو اُن دونوں کو ۔ اور جزا دے تُو اُن دونوں کو۔ الٰہی افضل ہے اس سے کہ جزا دی تُو نے ساتھ اُس کے باپ اور ماں کو دو بیٹوں سے اُن دونوں کے۔</p>
+				<!-- 12-->
+				<p class="numbers">12<span onclick="playFrom(207.0)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا جِبْرِيلَ وَسَيِّدِنَا مِيكَائِيلَ، وَسَيِّدِنَا إِسْرَافِيلَ وَسَيِّدِنَا عَزْرَائِيلَ، وَحَمَلَةِ العَرْشِ وَعَلَى المَلَائِکَةِ وَالمُقَرَّبِينَ، وَعَلَى جَمِيعِ الأَنْبِيَاءِ وَالمُرْسَلِينَ، صَلَوَاتُ اللَّهِ وَسَلَامُهُ عَلَيْهِمْ أَجْمَعِينَ (3)</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Jibrīla, wa sayyidinā Mīkāʾīla, wa sayyidinā Isrāfīla, wa sayyidinā ʿAzrāʾīla, wa ḥamalatil ʿarshi wa ʿalāl malāʾikati wal muqarrabina, wa ʿalā jamīʿil anbiyāʾi wal mursalīna, ṣalawātuLlahi wa salāmuhu ʿalayhim ajmaʿīn (3).</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda kami Malaikat Jibril, Mikail, Israfil, Izrafil, Malaikat Pemikul Arasy, Malaikat Muqarrabin dan seluruh para Nabi dan Rasul (mudah-mudahan Rahmat dan kesejahteraan Allah, terlimpahkan atas mereka seluruhnya)</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Jibril, and Sayyidina Mika'il, and Sayyidina Israfil and Sayyidina 'Azara'il and the bearers of the Throne, and the angels, and those brought near [to Allah], and all the Prophets and Messengers, may the peace and blessings of Allah be upon all of them (3 times).</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span>  درود بفرست بر سردار مایان جبرئیلؑ و میکائیلؑ و اسرافیلؑ و عزرائیلؑ و بر دارندگان عرش و برفرشتگان که نزویکان بارگاه تواند و برهمه انبیا و مرسلان درود های خدا و سلام او برآنها باد  (این را بگوسه بار)۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Jibril, Saïdina Mikaïl, Saïdina Israfil, Saïdina Izraïl, les porteurs du trône, les anges rapprochés, et sur tous les prophètes et les envoyés. Prière d'Allah et son salut sur eux tous.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz Cebrâîl’e, Mîkâîl’e, İsrâfîl’e, Azrâîl’e, arşı taşıyan meleklere, diğer meleklere, mukarrabûn makâmındaki meleklere bütün nebî ve rasullere salât eyle. Allâh’ın salât ve selâmı onların hepsinin üzerine olsun.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidina Cibrile ve Seyyidüna Mikaile ve Seyyidüna İsrafi le ve Seyyidüna Azraile ve hameletil arşi ve alel melaiketi vel mukarrebine ve ala cemi‘il enbiyai vel mürseline salavatullahi ve selamühü aleyhim ecma‘in.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے جبرائیلؑ کے اور سردار ہمارے میکائیلؑ اور سردار ہمارے اسرفیلؑ اور سردار ہمارے عزرائیلؑ کے۔ اور اُٹھانے والوں عرش کے اور اوپر سب فرشتوں کے اور مقربوں کے۔ اور اوپر تمام نبیوں اور رسولوں کے۔ درود اللہ کا اور سلام اُس کا اوپر اُن۔ کے سب کے تین بار پڑھے۔</p>
+				<!-- 13-->
+				<p class="numbers">13<span onclick="playFrom(238.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَدَدَ مَا عَلِمْتَ، وَمِلْءَ مَا عَلِمْتَ، وَزِنَةَ مَا عَلِمْتَ، وَمِدَادَ كَلِمَاتِكَ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammadin ʿadada mā ʿālimta, wa milʾa mā ʿālimta, wa zinata mā ʿalimta wa midāda kalimātika.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda Nabi Muhammad SAW sebanyak bilangan sesuatu yang Engkau ketahu, sebanyak hiasan yang Engkau ketahui sebanyak tinta kalimat Engkau.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Muhammad in quantity as great as Your knowledge encompasses, and to the extent of what Your knowledge encompasses, the measure of all You know, and the extent of Your words.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span> درود بفرست بر سردار مایان محمدؐ بشمار انچه دانسته تو و باندازۂ پُری انچه دانستۂ تو و بوزن انچه دانستۂ تو و بمقدار سخنان خود۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Mohammad, autant que ce que tu sais, plein ce que tu sais, au poids de ce que tu sais, et autant que l'encre nécessaire à écrire tes paroles.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz Muhammed’e bildiklerin sayısınca, bildiklerinin sonsuz ağırlığınca hattâ kelimelerinin adedince salât eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidüna Muhammedin adede ma alimte ve mil'e ma alimte ve zinete ma alimte ve midade kelimatike.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے بشمار اس کے کہ جانا تُو نے۔ اور پوری اس کی کہ جانا تُو نے اور وزن اس کے کہ جانا تُو نے اور سیاہی باتوں تیری کی۔</p>
+				<!-- 14-->
+				<p class="numbers">14<span onclick="playFrom(250.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ صَلَاةً مَوصُولَةً بِالْمَزِيدِ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammadin ṣalātan mawṣūlatan bil mazīd.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda kami Nabi Muhammad SAW, yaitu Rahmat yang menjadi sebab mendatangkan Tambah.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Muhammad with blessings that are continuously increasing.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span> درود بفرست بر سردار مایان محمدؐ دروویکه پیوسته باشد بافزودنی۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Mohammad, une prière constamment croissante.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz Muhammed’e hiç eksilmeyen salâtla salât eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidina Muhammedin salaten mevsûleten bil mezidi.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے ایسا درود کہ ملا ہو ساتھ زیادتی کے۔</p>
+				<!-- 15-->
+				<p class="numbers">15<span onclick="playFrom(258.0)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ صَلَاةً لَا تَنْقَطِعُ أَبَدَ الآبَادِ وَلَا تَبِيدُ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammadin ṣalātan lā tanqaṭiʿu abadal ābādi wa lā tabīd.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda kami Nabi Muhammad SAW, yaitu Rahmat yang tidak putus selamanya. Shalawat yang tidak putus dan hilang (musnah) selamanya.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Muhammad with a blessing which will never be interrupted, nor diminished.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span> درود بفرست بر سردار مایان محمدؐ دروویکه بریده نشود تا آخر زمان و فانی نشود۔ </p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Mohammad,une prière ininterrompue à l'infini et infinie.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz Muhammed’e sonsuzluğa kadar hiç kesilmeyen, hattâ zaman tükense bile bitip tükenmeyen salâtla salât eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidina Muhammedin salaten la tenkatı'u ebedel aabadi ve la tebidü.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے ایسا درود کہ نہ منقطع ہو ابد الآباد تک اور نہ فانی ہو۔</p>
+				<!-- 16-->
+				<p class="numbers">16<span onclick="playFrom(267.0)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ صَلَاتَكَ الَّتِي صَلَّيْتَ عَلَيْهِ، وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ سَلَامَكَ الَّذِي سَلَّمْتَ عَلَيْهِ، وَاجْزِهِ عَنَّا مَا هُوَ أَهْلُهُ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammadin ṣalātakallati ṣallayta ʿalayhi, wa ṣallim ʿalā sayyidinā Muḥammadin salāmakalladhi ṣallamta ʿalayhi, wajzihi ʿannā mā huwa ahluhu.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda kami Nabi Muhammad berupa Rahmat Engkau limpahkan atasnya. Dan limpahkanlah Salam Ta'zhim atas Baginda kami Nabi Muhammad SAW berupa kesejahteraan Engkau yang telah Engkau limpahkan kepadanya dan balasalah ia dari kami di mana ia adalah ahlinya.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Muhammad with as many blessings as You have already bestowed upon him. And grant peace to Sayyidina Muhammad with as much peace as You have already granted him, and reward him on our behalf as he deserves.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span>  درود بفرست بر رئیس مایان محمدؐ مانند درود تو که فرستادۂ تو آن درود را بروی و سلام بفرست بر رئیس مایان محمدؐ مانند سلام تو که فرستادۂ تو آن سلام را بروی و پاداش ده او را از مایان چیزیکه وی سزاوار اوست۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Mohammad, ta prière que tu as priée sur lui, et salue Saïdina Mohammad, ton salut par lequel tu l'as salué, et récompense le, pour nous, par ce dont il est digne.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz Muhammed’e yaptığın salât ve selâmla ona salât ve selâm eyle. Ayrıca onu lâyık olduğu şekilde mükâfaatlandır.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidüna Muhammedin salatekelleti salleyte aleyhi ve sellim ala Seyyidüna Muhammedin selamekellezi sellemte aleyhi ve eczihi anna ma hüve ehlühü.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے درود اپنا کہ درود بھیجا تُو نے اوپر اُن کے ۔اور سلام اوپر سردار ہمارے محمدؐ کے سلام اپنا کہ سلام بھیجا تُو نے اوپر اُن کے۔ اور جزا دے اُن کو ہم سے ایسی کہ آپ لائق اُس کے ہیں۔</p>
+				<!-- 17-->
+				<p class="numbers">17<span onclick="playFrom(282.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ صَلَاةً تُرْضِيكَ وَتُرْضِيهِ، وَتَرْضَى بِهَا عَنَّا، وَاجْزِهِ عَنَّا مَا هُوَ أَهْلُهُ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammadin ṣalātan turḍīka wa turḍīhi, wa tarḍa bihā ʿannā, wajzihi ʿannā mā huwa ahluhu.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda kami Nabi Muhammad SAW, yaitu Rahmat yang Engkau Ridhoi dan Engkau Ridhoi kepada kami. Dan balaslah ia dari kami dimana ia adalah ahlinya.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Muhammad with a blessing that pleases You and him, and by which You are pleased with us. And reward him on our behalf as he deserves.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span>  درود بفرست بر سردار مایان محمدؐ دروویکه خوشنود شوی تو و خوشنود گردانی اورا و خوشنود شوی تو بسبب آن از مایان و پاداش ده اورا از مایان چنانکه او سزاوار اوست۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Mohammad, une prière qui te satisfait, et par laquelle tu nous agrées, et récompense le, pour nous, par ce dont il est digne.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz Muhammed’e hem hoşnûd olacağı hem de kendisini menûn edecek ama bizden de memnûn olacağı salâtla ona salât eyle. lâyık olduğu şekilde onu mükâfaatlandır.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidüna Muhammedin salaten türdike ve turdihi ve terda biha anna ve eczihi anna ma hüve ehlühü.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے ایسا درود کہ راضی کرے تُجھ کو اور راضی کرے اُن کو۔ اور راضی ہو جائے تو ساتھ اس کے ہم سے اور جزا دے اُن کو ہم سے کہ آپ لائق اُس کے ہیں۔</p>
+				<!-- 18-->
+				<p class="numbers">18<span onclick="playFrom(294.0)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ بَحْرِ أَنْوَارِكَ، وَمَعْدِنِ أَسْرَارِكَ، وَلِسَانِ حُجَّتِكَ، وَعَرُوسِ مَمْلَكَتِكَ، وَإِمَامِ حَضْرَتِكَ، وَطِرَازِ مُلْكِكَ، وَخَزَائِنِ رَحْمَتِكَ، وَطَرِيقِ شَرِيعَتِكَ، المُتَلَذِّذِ بِتَوحِيدِكَ، إِنْسَانِ عَيْنِ الوُجُودِ، وَالسَّبَبِ فِي كُلِّ مَوجُودٍ، عَيْنِ أَعْيَانِ خَلْقِكَ، المُتَقَدِّمِ مِنْ نُّورِ ضِيَائِكَ، صَلَاةً تَدُومُ بِدَوَامِكَ، وَتَبْقَى بِبَقَائِكَ، لَا مُنْتَهَى لَهَا دُونَ عِلْمِكَ، صَلَاةً تُرْضِيكَ وَتُرْضِيهِ، وَتَرْضَى بِهَا عَنَّا يَا رَبَّ العَالَمِینَ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammadin baḥri anwārika, wa maʿdini asrārika, wa lisani ḥujjatika, wa ʿarūsi mamlakatika, wa imāmi ḥaḍratika, wa ṭirāzi mulkika, wa khazāʾini raḥmatika, wa ṭariqi sharīʿatikal mutaladhidhi bitawḥīdika, insāni ʿaynil wujūdi, was sababi fī kulli mawjūdin, ʿayni aʿyāni khalqikal mutaqaddimi min nūri ḍiyāʾika, ṣalātan tadūmu bidawāmika, wa tabqā bibaqāʾika, lā muntahā dūna ʿilmika, ṣalātan turḍīka wa turḍīhi, wa tarḍā bihā ʿanna yā rabbal ʿālamīn.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda kami Nabi Muhammad SAW selaku lautan berbagai cahaya Engkau dan tambang berbagai Rahasia Engkau. Penyampai Hujjah-hujjah Engkau Pengharum semerbak kerajaan Engkau. Kepada (Imam) di hadapan Engkau dan hiasan kerajaan Engkau. Gudang Rahmat Engkau, jalan Syare'at Engkau, manusia yang memiliki Rahasia batin, menjadi sebab segala yang ada, mata hati makhluk Engkau yang datang dari cahaya Nur Engkau, Rahmat yang kekal dengan kekekalan Engkau Rahmat Abadi dengan keabadian Engkau, tiada batas baginya, Rahmat yang Engkau Ridhoi dan Engkau Ridhoi kepadanya dan Ridhoi kepada kami. Wahai Tuhan sekalian Alam.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Muhammad - the Sea of Your lights, and the Treasury of Your mysteries, and the Tongue of Your proof, and the Pearl of Your kingdom, and the Imam of Your presence, and the Model of Your kingdom, and the Treasures of Your mercy, and the Path of Your Shari'a, delighting in Your tawhid, the pupil of the eye of existence, and the cause of all that exists, the source of the sources of Your creation, advanced from the light of Your light. [Bless him] with a blessing that will last forever, as You last, and remains forever, as You remain; blessings that are limitless, that exemplify Your knowledge - blessings that please You and him and by which You are pleased with us, O Lord of the Worlds.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span>  درود بفرست بر رئیس مایان محمدؐ که دریای نور های تست و کان اسرار تست و زبان دلیل روشن تست و نوکد خدای سلطنت تست و پیشوای درگاه تست و آرایش ملک تست و گنجینهای رحمت تست و راه وین تست و لذت یابنده است بتوحید تو آدمی مانند مردمک چشم وجود عالم و ذریعه در بودن هر آفریده شده چشم بزرگان آفرینش تو اول ظاهر شده از نور روشنی تجلی ذاتِ تو درود فرستادنی که همیشه باشد به همیشگی تو و پاینده بود بپایندگی توئست آخر مر آنرا بجز علم تو دروویکه خوشنود شوی تو و خوشنود گردانی اورا و خوشنود شوی تو بسبب آن از مایان ای پروردگار عالمیان۔ </p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Mohammad, Océan de tes lumières, Source de tes secrets, Langue de ta preuve, Eminent de ton Royaume, Imam de ton voisinage, Ornement de ta souveraineté, Entrepôt de ta miséricorde, Chemin de ton code, qui se délecte de la proclamation de ton unicité. Homme essence de la création, la cause de toute existence, le notable suprême parmi toutes les créatures, et le premier à puiser dans la lumière de ta clarté. Prière se perpétuant par la perpétuité, et s'éternisant par ton éternité, ne pouvant avoir un terme sans que tu sache. Prière, qui te satisfait et le satisfait, et te rend satisfait de nous, Ô Seigneur des univers.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, nurlarının denizi, sırlarının mâdeni, tek ilâh oluşunu kullarına açıklayan, hükümranlığının altında bulunan herşeyin nâdidesi, tevhîd makâmının imâmı varlık âlemine güzellik katan süsü, her türlü rahmetinin hazînesi, dîninin yolu, tevhîdinle lezzet alan, varlık özünün insanı, her vâr olanın varlık sebebi, yaratılmışların özünün özü, senin aydınlığının nûruna yakın olan efendimiz Muhammed’e Yûce Zâtın vâr oldukça devâm edecek, ancak sen yeterli gördüğünde bu salât son bulacak, hem seni hemde onu memnûn edecek, ama bizden de râzı olmana vesîle olacak olan salâtla ona salât eyle. Ey âlemlerin Rabbi olan Allâhım.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidüna Muhammedin bahri envarike ve ma‘dini esrarike ve lisani huccetike ve arûsi memleketike ve imami hazretike ve tirazi mülkike ve hazaini rahmetike ve tariki şeriatikel mütellezzizi bi tevhidike insani aynil vücûdi vessebebi fi külli mevcûdin ayni ayani halkikel mütekaddimi min nûri ziyaike salaten tedûmü bi devamike ve tebka bibekaike la münteha leha dûne ilmike salaten turdike ve turdihi ve terda biha anna ya Rabbel alemine.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے جو دریا ہیں نُور تیرے کے۔ اور کان ہیں بھید تیرے کے۔ اور زبان ہیں محبت تیرے کے۔ اور دولہا ہیں مُلک تیرے کے۔ اور امام ہیں درگاہ تیرے کے۔ اور نقش ہیں ملک تیرے کے ۔ اور خزانے ہیں رحمت تیرے کے۔ اور راہ ہیں دین تیرے کے۔ لذت پانے والے توحید تیرے کے۔ پُتلی آنکھ کی موجودات کے۔ اور سبب بیچ ہر موجود کے۔ آنکھ بزرگ مخلوق تیرے کے۔ سب سے پہلے نُور تجلی تیرے سے ۔ ایسا درود کہ ہمیشہ رہے ساتھ ہمیشگی تیری کے۔ اور باقی رہے ساتھ بقا تیرے کے۔ نہیں انتہا واسطے اس کے سوائے علم تیرے کے۔ ایسا درود کہ راضی کرے تُجھ کو۔ اور راضی کرے اُن کو ۔ اور راضی ہو تُو ساتھ اس کے ہم سے اے پروردگار عالموں کے۔</p>
+				<!-- 19-->
+				<p class="numbers">19<span onclick="playFrom(350.0)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَدَدَ مَا فِي عِلْمِ اللَّهِ صَلَاةً دَائِمَةً بِدَوَامِ مُلْكِ اللَّهِ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammadin ʿadada mā fī ʿilmiLlāhi ṣalātan dāʿimatan bidawāmi mulkiLlāh.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda kami Nabi Muhammad SAW sebanyak bilangan apa yang berada dalam ilmu Engkau, Rahmat yang kekal dengan sebab kekalnya Kerajaan Allah.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Muhammad to the extent of the knowledge of Allah, with a continuous blessing lasting forever, as the kingdom of Allah.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span> درود بفرست بر رئیس مایان محمدؐ بشمار چیزیکه در علم خداست دروویکه همیشه باشد به همیشگی ملک خدا۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr">Ô Alla,h prie sur Saïdina Mohammad, au nombre des connaissances d'Allah. Prière se perpétuant par la perpétuité de la souveraineté d'Allah.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz Muhammed’e senin ilminde gizli olanlar sayısınca ve senin mülkün devâm ettikçe devâm edecek olan salâtla salât eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme sallı ala Seyyidina Muhammedin adede ma fi ilmillahi salaten daimeten bidevami mülkillahi.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے بشمار اس کے کہ بیچ علم اللہ کے ہے ایسا درود کہ ہمیشہ رہے ساتھ ہمیشہ رہنے ملک اللہ کے۔</p>
+				<!-- 20-->
+				<p class="numbers">20<span onclick="playFrom(360.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى سَيِّدِنَا إِبْرَاهِيمَ، وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى آلِ سَيِّدِنَا إِبْرَاهِيمَ فِي العَالَمِینَ إِنَّكَ حَمِيدٌ مَّجِيدٌ، عَدَدَ خَلْقِكَ وَرِضَی نَفْسِكَ وَزِنَةَ عَرْشِكَ وَمِدَادَ كَلِمَاتِكَ، وَعَدَدَ مَا ذَكَرَكَ بِهِ خَلْقُكَ فِيمَا مَضَى، وَعَدَدَ مَا هُمْ ذَاكِرُونَكَ بِهِ فِيمَا بَقِيَ، فِي كُلِّ سَنَةٍ وَشَهْرٍ وَجُمُعَةٍ وَيَوْمٍ وَلَيْلَةٍ وَسَاعَةٍ مِنَ السَّاعَاتِ وَشَمٍّ وَنَفَسٍ وَطَرْفَةٍ وَلَمْحَةٍ، مِنَ الأَبَدِ إِلَى الأَبَدِ، وَآبَادِ الدُّنْيَا وَآبَادِ الآخِرَةِ، وَأَكْثَرَ مِنْ ذَلِكَ، لَا يَنْقَطِعُ أَوَّلُهُ، وَلا يَنْفَدُ آخِرُهُ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammadin kamā ṣallayta ʿalā sayyidinā Ibrāhīma, wa bārik ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin kamā bārakta ʿalā āli sayyidinā Ibrāhīma fil ʿālamina innaka ḥamīdun majīd, ʿadada khalqika wa riḍaʾa nafsika wa zinata ʿarshika wa midāda kālimātika, wa ʿadada mā dhakaraka bihi khalquka fīmā maḍā, wa ʿadada māhum dhākirūnaka bihi fīmā baqiya, fī kulli sanatin wa shahrin wa jumuʿatin wa yawmin wa laylatin wa sāʿatin minas sāʿāti, wa shammin wa nafasin wa ṭarfatin wa lamḥatin, minal abadi ilāl abadi, wa ābādid dunyā wa ābādil ākhirati, wa akthara min dhālika ,lā yanqaṭiʿu awwaluhu walā yanfadu ākhiruhu.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda kami Nabi Muhammad SAW sebagaimana Engkau telah melimpahkannya atas Baginda kami Nabi Ibrahim as. Dan berkahilah atas Baginda kami Nabi Muhammad SAW dan keluarganya, sebagaimana Engkau memberkahi atas Nabi Ibrahim dan keluarga. Di seluruh Alam sesungguhnya Engkau Maha Terpuji dan Mulia, menurut bilangan makhluk Engkau Ridhoi dari Engkau, hiasan arasy Engkau, bilangan kalimat Engkau, bilangan sesuatu yang makhluk Engkau terdahulu menyebut Engkau. Dan menurut bilangan sesuatu yang mereka tetap menyebut Engkau pada tiap-tiap tahun, bulan, minggu, sehari, malam, jam, berbagai waktu, nafas, kejapan mata, dari tahun ke tahun, baik tahun dunia maupun Akherat atau lebih banyak lagi yang tidak putus-putus permulaannya dan tidak habis-habis penghabisannya.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Muhammad as you blessed Sayyidina Ibrahim. And sanctify Sayyidina Muhammad and the family of Sayyidina Muhammad as You sanctified the family of Sayyidina Ibrahim in the worlds. You are Praiseworthy, Glorious. [Bless Sayyidina Muhammad] in quantity as great as what is encompassed by Your great and good pleasure, the weight of Your Throne, the extent of Your words. And in quantity as great as what Your creation mentions to You of him in what has preceded, and in quantity as great as what they mention of him to You from what proceeds henceforth in every year, month, week, day, night, hour, smell, breath, wink and glance, forever and ever, infinitely beyond this world and infinitely beyond the Next World, and more than that - of which the beginning is not cut off and of which the end is never reached.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span>  درود بفرست بر سردار مایان محمدؐ چنانچه درود فرستادۂ تو بر سردار مایان ابرهیمؑ و برکت ده بر سردار مایان محمدؐ و بر آل سردار مایان محمدؐ چنانچه برکت دادۂ بر آل ابرهیم در عالمیان بدرستیکه تو ستوده شده بزرگواری بشمار آفرینش خود و خوشنووی ذات خود و بوزن عرش خود و باندازۂ سخنان خود و بشمار چیزیکه یاد کرده اند ترا با و آفریدگان تو درزمانیکه گذشته و بشمار چیزیکه آنها یاد کننده اند ترا با و در زماینکه باقیست در هر سالی و ماهی و جمعه و روزی و شبی و ساعتی از ساعت و بوی دماغی دوم کردنی و چشم زدنی و اندک نظر کردنی از ابتدای زمانه تا آخر زمانه و زمانهای دنیا وزمانهای دراز آخرت و زیاده ازانچه ذکر کرویم بریده نشود اول آن و فانی نشود آخر آن۔ </p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Mohammad, comme tu as prié sur Saïdina Ibrahim, et bénis Saïdina Mohammad et la famille de Saïdina Mohammad, comme tu as béni la famille de Saïdina Ibrahim, dans les univers. Tu es louable et glorieux; au nombre de tes créatures, autant que ta propre satisfaction, que le poids de ton Trône, que l'encre nécessaire à écrire tes paroles et que le nombre de fois que t'ont évoqué tes créatures dans la passé et que le nombre de fois qu'il t'évoqueront dans l'avenir dans chaque année, mois et semaine, jour et nuit, heure parmi les heures, flair, souffle, clin d’oeil et regard de l'infini à l'infini, et durant l'existence du monde et l'existence de l'au-delà, et plus que ça, sans que son début s'interrompe et que son terme s'achève.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, yarattıklarının sayısınca, bizzat senin rızân, arşının ağırlığı, kelimelerinin sayısı, yarattıklarının geçmişte seni zikrettikleri ve gelecek zamanda seni zikredecek olanların sayısınca, her sene, her ay, her Cuma, her gün, her gece, her saat, her koku almada, her nefeste, gözün her açılıp kapanmasında, her canlının gözünü hareket ettirmesinde, sonsuzluğun sonsuzluğuna dünyâ ve âhiretin de sonsuzluğuna kadar hem bunların kat kat fazlasıyla, öncesi olmayacak ve sonu gelmeyecek bir şekilde efendimiz İbrâhîm’in âl-i’ne salât ettiğin ve bereket ihsân ettiğin gibi efendimiz Muhammed’e ve onun âl-i’ne de salât eyle. Bereket ihsân eyle. Şüphesiz sen methedilmeye layık azâmet ve şeref sâhibisin.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme sallı ala Seyyidina Muhammedin kema salleyte ala Seyyidina İbrahime ve barik ala Seyyidüna Muhammedin ve ala ali Seyyidüna Muhammedin kema barekte ala ali Seyyidüna İbrahime fi l alemine inneke hamidün mecidün. Adede halkıke ve rızae nefsike ve zinete arşike. Ve midade kelimatike. Ve adede ma zekereke bihi halkuke fi ma meda ve adede mahüm zakirûneke bihi fi ma beka, fi külli senetin ve şehrin ve cumu'atin. Ve yevmin ve leyletin ve saatin minessaati. Ve şemmin ve nefesin ve tarfetin ve lemhatin minel ebedi ilel ebedi ve abadid dünya ve abadil ahireti ve eksere min zalike la yenkatı'u evvelühü vela yenfadü ahirühü.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے جیسا درود بھیجا تُو نے اوپر سردار ہمارے ابراہیمؑ کے۔ اور برکت بھیج اوپر سردار ہمارے محمدؐ کے اور آل سردار ہمارے محمدؐ کے جیسی برکت بھیجو تُو نے اوپر آل سردار ہمارے ابراہیمؑ کے بیچ عالموں کے۔ تحقیق تُو بڑی تعریف والا بزرگی والا ہے۔ بشمار مخلوق اپنی کے۔ اور خوشنودی ذات اپنی کے۔ اور بوزن عرش اپنے کے۔ اور سیاہی باتوں اپنی کے۔ اور بشامار اس کے کہ یاد کیا تُجھ کو ساتھ اس کے مخلوق تیرے نے بیچ گزشتہ زمانے کے۔ اور بشمار اس کے کہ وہ ذکر کرنے والے ہیں تیرا ساتھ اس کے کہ بیچ زمانۂ حال و استقبال کے بیچ ہر سال اور ہر ماہ اور جمعہ۔ اور ہر دن اور رات اور ہر گھڑی کے گھڑیوں سے۔ اور خوشبو کے پہنچنے اور سان لینے کے پلک مارنے اور بہ مقدار نظر آنے کے۔ ابتدا زمانہ سے آخر زمانہ تک۔ اور ابتدا زمانۂ دنیا سے آخر زمانۂ آخرت تک۔ اور زیادہ اس سے کہ نہ منقطع ہو اوّل اس کا اور نہ فنا ہو آخر اس کا۔</p>
+				<!-- 21-->
+				<p class="numbers">21<span onclick="playFrom(439.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَلَى قَدْرِ حُبِّكَ فِيهِ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammadin ʿalā qadri ḥubbika fīhi.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda kami Nabi Muhammad SAW menurut kadar cinta Engkau kepadanya.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Muhammad to the degree of Your love for him.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span> درود بفرست بر سردار مایان محمدؐ بر اندازۂ دوستی تو درحق وی۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Mohammad, une prière égale à ton amour pour lui.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım! Efendimiz Muhammed'e ona olan muhabbetin kadar salat eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidina Muhammedin ala kadri hubbike fi hi.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے بقدر محبت اپنی کے بیچ اُن کے۔</p>
+				<!-- 22-->
+				<p class="numbers">22<span onclick="playFrom(447.0)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَلَى قَدْرِ عِنَايَتِكَ بِهِ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammadin ʿalā qadri ʿināyatika bihi.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda kami Nabi Muhammad SAW menurut kada pertolongan Engkau kepadanya.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Muhammad to the scope of Your solicitude for him.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span> درود بفرست بر سردار مایان محمدؐ براندازۂ توجه تو بسوی وی۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Mohammad, une prière égale à ta sollicitude envers lui.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz Muhammed’e olan lutuf ve ihsânın kadar kendisine salât eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidüna Muhammedin ala kadri inayetike bih.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے بقدر عنایت اپنی کے ساتھ اُن کے۔</p>
+				<!-- 23-->
+				<p class="numbers">23<span onclick="playFrom(454.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ حَقَّ قَدْرِهِ وَمِقْدَارِهِ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammadin ḥaqqa qadrihi wa miqdārihi.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda kami Nabi Muhammad SAW dengan sebenar-benar derajat beliau.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Muhammad in accordance with his rank and worthiness.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span> درود بفرست بر سردار مایان محمدؐ لائق مرتبه وی و بزرگی شان وی۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Mohammad, prière égale à sa valeur et l'étendue de sa dignité.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz Muhammed’e senin katındaki şânına lâyık ve kıymetine uygun olarak salât eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidüna Muhammedin hakka kadrihi ve mikdarihi.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے لائق قدر اُن کے اور مقدار اُس کی کے ۔</p>
+				<!-- 24-->
+				<p class="numbers">24<span onclick="playFrom(462.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ صَلَاةً تُنْجِينَا بِهَا مِنْ جَمِيعِ الأَهْوَالِ وَاْلآفَاتِ، وَتَقْضِي لَنَا بِهَا جَمِيعَ الحَاجَاتِ، وَتُطَهِّرُنَا بِهَا مِنْ جَمِيعِ السَّيِّئَاتِ، وَتَرْفَعُنَا بِهَا أَعْلَى الدَّرَجَاتِ، وَتُبَلِّغُنَا بِهَا أَقْصَى الغَايَاتِ مِنْ جَمِيعِ الخَيْرَاتِ، فِي الحَيَاةِ وَبَعْدَ المَمَاتِ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammadin ṣalātan tunjinā bihā min jamīʿil ahwāli wal āfāt, wa taqḍi lanā bihā jamīʿal ḥājāt, wa tuṭahhirunā bihā min jamīʿis sayyiʾāt, wa tarfaʿunā bihā aʿlad darajāti, wa tuballighunā bihā aqṣal ghāyāt min jamīʿil khayrāti, fil ḥayāti wa baʿdal mamāt.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda kami Nabi Muhammad yaitu Rahmat yang menyelamatkan kami dari segala masalah yang menakutkan, tercapainya segala hajad, Pembersih segala kejelekan (dosa), mengangkat ke derajat tinggi, menyampaikan kami ke tempat yang tinggi dari segala kebajikan di saat hidup dan sesudah mati.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Muhammad with a blessing by which we are saved from all terrors and afflictions, by which we are granted all our needs, by which we are purified from all evils, by which we are raised up to the highest of degrees, and by it let us reach the furthest of goals in all good things, in life and after death.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span>  درود بفرست بر سردار مایان محمدؐ دروویکه خلاص گردانی ما را بسبب آن از همه ترسها و بلاها   ادا گردانی برای مابسبب آن همه حاجتها و پاک گردانی مایانرا بسبب آن از همه گناهان و بلند گردانی مایان را بسبب آن برتر پایه ها و برسانی مایان را بسبب آن پایان ترین نهایتها ازهمه نیکوئیها در زندگانی و پس از مردن۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Mohammad, prière par laquelle tu nous sauveras de tous les fléaux et les terreurs, tu satisferas tous nos besoins, tu nous purifieras de tous les pêchés, tu nous élèveras au plus haut rang et tu nous feras atteindre les objectifs extrêmes dans tous les biens, durant la vie et après la mort.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz Muhammed’e öyle salât eyleki o salâtla bizi bütün âfetlerden ve korkulardan kurtar, bütün isteklerimizi yerine getir. Bütün günahlardan bizi temizle. Bizi en yüksek derecelere yükselt. Hem bu dünyâda hem de ölümden sonra bizi bütün hayırlarda en son hedefe ulaştır.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidüna Muhammedin salaten tüncına biha min cemi'il ehvali vel afati. Ve takdi lena biha cemi'al hacati. Ve tütahhiruna biha min cemi'is seyyiati. Ve terfeuna biha a'led derecat. Ve tübelliguna biha aksalgayati. Min cemi'il hayrati fi l hayati ve ba'del memat.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے ایسا درود کہ بچائے تُو ہم کو ساتھ اس کے تمام خوفوں اور بلاؤں سے۔ اور پوری کرے تُو واسطے ہمارے ساتھ اس کے تمام حاجتیں۔ اور پاک کرے ہم کو ساتھ اس کے تمام گناہوں سے۔ اور بُلند کرے تُو ساتھ اس کے بڑے درجے۔ اور پہنچانئے تُو ہم کو ساتھ اس کے پرلے سرے کی نہایتوں پر تمام نیکیوں سے بیچ زندگی کے اور بعد مرنے کے۔</p>
+				<!-- 25-->
+				<p class="numbers">25<span onclick="playFrom(496.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ صَلَاةَ الرِّضَا، وَارْضَ عَنْ أَصْحَابِهِ رِضَاءَ الرِّضَا.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammadin ṣalātar riḍāʾi, warḍa ʿan aṣ-ḥābihi riḍāʾar riḍā.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda kami berupa Rahmat keridhoan dan Ridhoilah para sahabat beliau berupa ridho yang tertinggi.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Muhammad with a blessing of acceptance and be pleased with his companions with the pleasure of acceptance.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span> درود بفرست بر سردار مایان محمدؐ دروویکه بسبب خوشنووی توشود و خوشنود باش از یاران وی خوشنووی که پیدا شود از و خوشنووی۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Mohammad, une prière de la satisfaction, et agrée ses compagnons un agrément de la satisfaction.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz Muhammed’e râzı olacağın salâtla salât eyle. O’nun ashâbından da tam anlamıyla râzı ol.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidüna Muhammedin salater rızai verda an ashabihi rızaer rıza.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے ایسا درود کہ باعثِ رضا ہو۔ اور راضی ہو تُو اصحاب اُن کے ساتھ خوشنودی رضا کے۔</p>
+				<!-- 26-->
+				<p class="numbers">26<span onclick="playFrom(507.0)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ السَّابِقِ لِلْخَلْقِ نُورُهُ، وَرَحْمَةٌ لِلْعَالَمِینَ ظُهُورُهُ، عَدَدَ مَنْ مَضَى مِنْ خَلْقِكَ وَمَنْ بَقِيَ، وَمَنْ سَعِدَ مِنْهُمْ وَمَنْ شَقِيَ، صَلَاةً تَسْتَغْرِقُ العَدَّ، وَتُحِيطُ بِالْحَدِّ، صَلَاةً لَا غَايَةَ لَهَا وَلا مُنْتَهَى وَلَا انْقِضَاءَ، صَلَاةً دَائِمَةً بِدَوَامِكَ، وَعَلَى آلِهِ وَصَحْبِهِ، وَسَلِّمْ تَسْلِيمَاً مِثْلَ ذَلِكَ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr">Allahuma ṣalli ʿalā sayyidinā Muḥammadinis sābiqi lil khalqi nūruhu, wa raḥmatun lil ʿālamina ẓuhūruhu, ʿadada man maḍā min khalqika wa man baqiya, wa man saʿida minhum wa man shaqiya, ṣalātan tastaghriqul ʿadda wa tuḥīṭu bil ḥaddi, ṣalātan lā ghāyata lahā walā muntaha walanqiḍāʾa, ṣalātan daʾimatan bidawāmika wa ʿalā ālihi wa ṣaḥbihi, wa ṣallim tasliman mithla dhālika.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda kami Nabi Muhammad SAW, dimana Nur beliau mendahului makhluk menjadi Rahmat yang jelas bagi seluruh alam sebanyak bilangan orang yang terdahulu dan yang akan datang dari Makhluk Engkau. Sebanyak orang yang bahagia dan celaka dari Makhluk Engkau. Rahmat yang menenggelamkan bilangan sehingga tiada tersisa sedikitpun. Rahmat yang tiada penghabisannya, tiada kesudahan dan selesai Rahmat yang kekal dengan sebab kekekalan Engkau. Demikian juga limpahkanlah kiranya kesejahteraan yang sempurna atas keluarga dan sahabatnya.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Muhammad, whose light preceded creation, and who is a mercy to the worlds. [Bless him] in quantity as great as the number of those who have passed from Your creation, whoever remains, whoever is happy and whoever is wretched, with a blessing which is beyond number and is endless. A blessing without limit, end, nor expiration. A constant blessing which lasts as long as You, and bless his family and his companions and grant them peace to that degree.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span> درود بفرست بر سردار مایان محمدؐ که پیش بوده است مر آفریدگان را نور او بخشش ست برای عالمیان پیدا شدن او بشمار چیزیکه گذشتۂ از آفریدگان تو و چیزیکه باقی مانده است و کسیکه نیکبخت شده است از انها کسیکه بدبخت شده است دروویکه گرد آرد و شامل باشد همه مراتب شمار را و فرار رسد پایان حُسن و خوبی را دروویکه نیست آخر او را و نه پایان و نه تمام شدن دروویکه همیشه باشد به همیشگی تو و بر آل وی و یاران وی و سلام بفرست سلام فرستادنی مانند انچه مذکور شد۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Mohammad, dont la lumière a précédé la création et dont l'apparition est pour les univers une miséricorde, au nombre de tes créatures passées et celles à venir, et des heureuses d'entre elles et des malheureuses, prière dépassant le dénombrement, et englobant la limite, prière sans fin, sans terme et sans expiration, prière se perpétuant par ta perpétuité, et sur sa famille et ses
+compagnons, et salue les un grand salut autant que cela.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, nûru yarattıklarının arasında önde, vâroluşu âlemlere rahmet olan efendimiz Muhammed’e, onun âl- i’ne ve ashâbına, yarattıkların arasında şu âna dek ne kadar gelip geçen varsa, onlardan sa’ıd ve şakî olanların sayısınca, bütün sayıları içine alan, sınırları kuşatan, sonu olmayan, bitip tükenmeyen ve zâtınla ebediyyen devâm eden salâtla salât eyle. Aynı şekilde de tam mânâsıyla da selâm eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidüna Muhammedinis-sabıkı lil halkı nûruhü ve rahmetün lil alemine zuhûrühü. Adede men meda min halkıke ve men bakiye ve men saide minhüm ve men şakiye. Salaten testagrıkul adde ve tühitu bil haddi. Salaten la gayete leha vela münteha velenkıdae. Salaten daimeten bi devamike ve ala alihi ve sahbihi ve sellim teslimen misle zalike.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے کہ پہلے سے واسطے خلق کے نُور اُن کا اور رحمت ہے واسطے عالموں کے ظہور اُن کا بشمار اُن کے کہ گزر گئے مخلوق تیری سے اور جو باقی ہیں۔ اور جو نیک بخت ہوئے اُن میں سے اور جو بد بخت ہوئے۔ ایسا درود کہ گھیرے گنتی کو اور احاطہ کرے ساتھ حد کے۔ ایسا درود کہ نہیں غایت واسطے اُس کے اور نہیں انتہا۔ اور نہیں تمام دیس۔ ایسا درود کہ ہمیشہ ہو ساتھ ہمیشگی تیری کے۔ اور اوپر آل اُن کی کے اور اصحاب اُن کے کے۔ اور سلام مثل اس کے۔</p>
+				<!-- 27-->
+				<p class="numbers">27<span onclick="playFrom(549.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ الَّذِي مَلَأْتَ قَلْبَهُ مِنْ جَلَالِكَ، وَعَيْنَهُ مِنْ جَمَالِكَ، فَأَصْبَحَ فَرِحَاً مُؤَيَّدَاً مَنْصُورَاً، وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ تَسْلِيمَاً، وَالحَمْدُ للهِ عَلَى ذَلِكَ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammadinil ladhī malaʾta qalbahu min jalālika, wa ʿaynuhu minn jamālika, fa aṣbaḥa fariḥan muʿayadan manṣūran, wa ʿalā ālihi wa ṣaḥbihi wa sallim tasliman, walḥamduLlahi ʿalā dhālika.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda kami Nabi Muhammad SAW yang telah Engkau penuhkan hati beliau dari takut akan keagungan Engkau dan Engkau penuhkan mata hatinya memandang sifat kebagusan Engkau, sehingga beliau menjadi orang yang bersuka ria, kuat dan tertolong (menang). Demikan juga mudah-mudahan kesejahteraan yang sempurna atas keluarga dan sahabat beliau. Segala puji bagi Allah.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Muhammad whose heart You filled with Your majesty, and whose eye you filled with Your beauty so that he became joyful, affirmed and victorious. And bless his family and companions and grant them peace, and praise be to Allah for that.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span>  درود بفرست بر رئیس مایان محمدؐ که پر کرده ای تو دل او را از بزرگی خود و ویدۂ او را از حُسن و خوبی خود پس گشت شادان قوت داده شد و یاری داده شده و برآل وی و یاران وی و سلام بفرست سلام فرستادنی و حمد و ستایش مخصوص آن خداست۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Mohammad, à qui tu as rempli le coeur par ta majesté et l’oeil par ta beauté, il est devenu ainsi heureux, soutenu et victorieux, et sur sa famille et ses compagnons, et salue les abondamment. Et on rend grâce à Allah pour cela.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, kalbini celâl, gözünü cemâl sıfatınla doldurduğun, böylece destek ve yardım ikrâm ederek sevindirdiğin, efendimiz Muhammed’e âl-i’ne ve ashâbına, salât eyle. tam mânâsıyla da onlara selâm eyle. Hamd sâdece Allâh’a âittir.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidina Muhammedinillezi mele'te kalbehu min celalike ve aynühu min cemalike feesbaha ferihan müeyyeden mansuren ve ala alihi ve sahbihi ve sellim teslimen vel hamdü lillahi ala zalike.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے کہ بھر دیا ہے تُو نے دل اُن کا جلال اپنے سے۔ اور آنکھ اُن کی جمال اپنے سے۔ پس ہو گئے خوش مدد پائے ہوئے فتح یاب۔ اور اوپر آل اُن کی کے اور اصحاب اُن کے کے اور سلام بھیج بہت۔ اور سب تعریف واسطے اللہ کے ہے اوپر اس کے۔</p>
+				<!-- 28-->
+				<p class="numbers">28<span onclick="playFrom(576.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا وَمَوْلَانَا مُحَمَّدٍ عَدَدَ أَورَاقِ الزَّيْتُونِ وَجَمِيعِ الثِّمَارِ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā wa mawlānā Muḥammadin ʿadada awrāqiz zaytūni wa jamīʿith thimār.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda kami Nabi Muhammad SAW sebanyak bilangan daun-daun pohon zaitun dan segala buah-buahan.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina Mawlana Muhammad in quantity as great as the leaves of the olive tree and all the fruits.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span>  درود بفرست بر سردار مایان و مالک مایان محمدؐ بشمار برگهای درخت زیتون و همه میوها۔ </p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina et Maoulana Mohammad, au nombre des feuilles des oliviers et de tous les fruits.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz ve gönül sultânımız Muhammed’e, zeytin yaprakları ve bütün meyvelerin yaprakları sayısınca salât eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidina ve Mevlana Muhammedin adede evrakız zeytuni ve cemi'is simari.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے اور مولٰے ہمارے محمدؐ کے بشمار پتوں زیتون کے اور تمام پھلوں کے۔</p>
+				<!-- 29-->
+				<p class="numbers">29<span onclick="playFrom(587.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا وَمَوْلَانَا مُحَمَّدٍ عَدَدَ مَا كَانَ وَيَكُونُ، وَعَدَدَ مَا أَظْلَمَ عَلَيْهِ اللَّیْلُ وَأَضَاءَ عَلَيْهِ النَّهَارُ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā wa mawlānā Muḥammadin ʿadada mā kāna wa yakūnu, wa ʿadada mā aẓlama ʿalayhil laylu wa aḍāʾa ʿalayhin nahār.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda kami Nabi Muhammad SAW sebanyak bilangan apa yang ada dan tidak ada dan sebanyak bilangan apa yang digelapi oleh malam dan disinari oleh siang.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina, Mawlana Muhammad in quantity as great as what was, and what is, and in quantity as great as what the night darkens and upon what the day throws light.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span>  درود بفرست بر سردار مایان و مالک مایان محمدؐ بشمار انچه بود و انچه میباشد و بشمار انچه تاریک شده است بروی شب و روشن شده است بروی روز۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina et Maoulana Mohammad, autant que ce qui était et ce qui sera, et autant que ce qu'a couvert la nuitet ce qu'a illuminé le jour.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz ve gönül sultânımız Muhammed’e, olmuş ve olacakların sayısınca, gecenin kararttığı ve gündüzlerin aydınlattığı canlı-cansız varlıklar adedince salât eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidina ve Mevlana Muhammedin adede ma kane vema yekûnü ve adede ma ezleme aleyhil leylü ve adae aleyhinneharü.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے اور مولٰے ہمارے محمدؐ کے بشمار اُن کے جو ہو چکے اور جو ہوں گے۔ اور بشمار اس کے کہ تاریک ہوئی اوپر اُن کے رات اور روشن ہوا اُوپر اُن کے دن۔</p>
+				<!-- 30-->
+				<p class="numbers">30<span onclick="playFrom(601.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا وَمَوْلَانَا مُحَمَّدٍ وَعَلَى آلِهِ وَأَزْوَاجِهِ وَذُرِّيَّتِهِ عَدَدَ أَنْفَاسِ أُمَّتِهِ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā wa mawlānā Muḥammadin wa ʿalā ālihi wa azwājihi wa dhuriyyatihi ʿadada anfāsi ummatihi.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda kami Nabi Muhammad, isteri-isteri beliau dan keturunan beliau, sebanyak bilangan nafas Ummat beliau.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless Sayyidina, Mawlana Muhammad and his family, his wives and his offspring in quantity as great as the breaths of his community.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span>  درود بفرست بر سردار مایان و مالک مایان محمدؐ و بر آل وی و زنان وی و ذریت وی بشمار نفسهای اُمت وی۔ </p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina et Maoulana Mohammad, sur sa famille, ses épouses et sa descendance, au nombre des souffles de sa communauté.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz ve gönül sultânımız Muhammed’e, onun âl-i’ne, zevcelerine, zürriyetine ümmetinin nefesleri sayısınca salât eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidina ve Mevlana Muhammedin ve ala alihi ve ezvacihi ve zürriyetihi adede enfasi ümmeti.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے اور مولٰے محمدؐ کے اور اوپر آل اُن کی کے اور بی بییوں اُن کی کے اور اولاد اُن کی کے بشمار سانس اُمت اُن کی کے۔</p>
+				<!-- 31-->
+				<p class="numbers">31<span onclick="playFrom(614.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ بِبَرَكَةِ الصَّلَاةِ عَلَيْهِ اجْعَلْنَا بِالصَّلَاةِ عَلَيْهِ مِنَ الفَائِزِينَ، وَعَلَى حَوْضِهِ مِنَ الوَارِدِينَ الشَّارِبِينَ، وَبِسُنَّتِهِ وَطَاعَتِهِ مِنَ العَامِلِينَ، وَلا تَحُلْ بَيْنَنَا وَبَيْنَهُ يَوْمَ القِيَامَةِ يَا رَبَّ العَالَمِينَ، وَاغْفِرْ لَنَا وَلِوَالِدِينَا وَلِجَمِيعِ المُسْلِمِينَ، وَالحَمْدُ لِلَّهِ رَبِّ العَالَمِینَ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> bibarakatiṣ ṣalāti ʿalayhi ijʿalnā biṣṣalāti ʿalayhi minal fāʾizīna, wa ʿalā ḥawḍihi minal wāridinash shāribīn, wa bisunnatihi wa ṭāʿatihi minal ʿāmilīna, wa lā taḥul baynanā wa baynahu yawmal qiyāmati yā rabbal ʿālamīn, waghfirlanā wa liwālidaynā wa lijamīʿil muslimīna, walalḥamdu liLlahi rabbil ʿālamīn.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, dengan berkah Shalawat Ta'zhim atasnya, jadikanlah kami dengan bershalawat kepadanya termasuk golongan orang-orang beruntung. Dan atas telaga beliau termasuk golongan yang sampai dan meminum airnya. Jadikanlah kami dengan sunnah-sunnah dan ketaatan beliau termasuk golongan orang yang mengamalkannya. Janganlah kami dipisahkan dengan beliau pada hari kiamat, Ya Tuhan seru sekalian alam (i). Dan ampunilah kami, kedua orang tua kami dan seluruh orang Islam. Segala puji bagi Allah seru sekalian Alam.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, by the barakah of his blessing, make us among the victorious by our asking for blessings upon him. And among those who come to drink from his wellspring, and those who act by his sunnah and are obedient to him. And do not place a barrier between us and him on the Day of Resurrection, O Lord of the Worlds. And forgive us and our parents and all Muslims, and praise be to Allah, Lord of the Worlds.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span> به همین درود گفتن بروی گردان مایان را بدرود فرستادن بروی از رستگاران و بر حوض او از فرود آیندگان نوشندگان و بطریقۂ وی و فرمانبرداری وی از کار کنندگان و مکن پرده میان مایان و میان او تا روز قیامت ای پروردگار عالمیان و بیامرز مایان را و مر پدر و مادر مایان را و همه مسلمانان را و ستایش مر خدایراست که پروردگار عالمیانست۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, nous t'implorons par la bénédiction émanant de la prière sur lui, de nous inclure, par la prière sur lui, parmi ceux qui ont mérité la réussite, qui parviendront à son Haoud et s'y abreuveront, qui pratiqueront sa sounna et t'obéiront. De ne pas nous séparer de lui le jour du jugement dernier, Ô Seigneur des univers. Et d'absoudre nos pêchés, ainsi que ceux de nos parents et de tous les musulmans. Grâce à Allah Seigneur des univers.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz sallallâh-ü aleyh-i vesellem’e yapılan salatın bereketi hatrına, bizi dünyâ ve âhirette ona okuduğumuz salât sâyesinde kurtulanlardan, onun kevser havuzuna varıp içenlerden, ona itaat edip sünnetiyle amel edenlerden eyle. Ey âlemlerin Rabbi olan Allâhım. Onunla bizim aramıza kıyâmet günü perde koyma. Bizi, ana- babamızı ve bütün müslümanları bağışla. Hamd âlemlerin Rabbi olan Allâh’a mahsustur.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme bibereketis salati aleyhicalna bissalati aleyhi min nelfaizine ve ala havzihi minel varidineş şaribine.Ve bi sünnetihi ve taatihi minel amiline ve la tehül beynena ve beynehü yevmel kıyameti ya Rabbel alemine.Vağfirlena ve li validiyna ve li cemi'il müslimine. Elhamdü lillahi rabbil alemine.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> ساتھ برکت درود کے اوپر اُن کے کر ہم کو ساتھ درود بھیجنے کے اوپر اُن کے پہنچنے والوں (رستگاروں) سے۔ اور اوپر حوض اُن کے کے اُترنے والوں پینے والوں سے۔ اور ساتھ طریقہ اُن کے اور طاعت اُن کی کے عمل کرنے والوں سے۔ اور نہ پردہ ڈال درمیان ہمارے اور درمیان اُن کے دن قیامت کے اے پروردگار عالموں کے۔ اور بخش ہم کو اور والدین ہمارے۔ اور تمام مسلمانوں کو سب تعریف واسطے اللہ کے ہی جو پالنے والا ہے عالموں کا۔</p>
+				<p class="lang arabicText thirdsQuarters"  lang="ar" style="text-decoration: underline;"><br/><br/>ابتداء الثلث الثاني</p> 
+				<p class="lang trans "  lang="en" dir="ltr" style="text-decoration: underline; display: none;">Beginning of the Second Third</p> 
+				<!-- 32-->
+				<p class="numbers">32<span onclick="playFrom(650.0)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ أَكْرَمِ خَلْقِكَ، وَسِرَاجِ أُفُقِكَ، وَأَفْضَلِ قَائِمٍ بِحَقِّكَ، المَبْعُوثِ بِتَيْسِيرِكَ وَرِفْقِكَ، صَلَاةً يَتَوَالَى تَكْرَارُهَا، وَتَلُوحُ عَلَى الأَكْوَانِ أَنْوَارُهَا.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli wa ṣallim wa bārik ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin akrami khalqika, wa sirāji ufuqika, wa afḍali qāʾimin biḥakkikal mabʿūthi bitaysīrika wa rifqika, ṣalātan yatawāla takrāruha, wa talūḥu ʿalal akwāni anwāruhā.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim dan barokah atas Baginda kami Nabi Muhammad SAW dan atas keluarga beliau yang menjadi semulia-mulia makhluk Engkau, penerang jagad raya Engkau, paling kokoh memegang hak-hak Engkau, yang diutus kepada makhluk dengan mudah dan lemah lembut yaitu berupa Shalawat Ta'zhim yang terus menerus di ulangi, yang cahayanya menerangi jagad raya.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless, grant peace and blessing to Sayyidina Muhammad and the family of Sayyidina Muhammad, the noblest of Your creation, the lamp of Your horizon, the best of those who carry out Your Truth. [He was] dispatched through Your enabling support and tenderness with a blessing that proceeds repeatedy and shines its lights upon all the universes.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span> درود بفرست و سلام بفرست و برکت ده بر سردار مایان محمدؐ و بر آل سردار مایان محمدؐ که بزرگوارترین آفریدگان تست و چراغ همه اطراف آسمان و بهترین هر ایستادۂ بر حق تست که برانگیخته شده بسبب آسان ساختن تو و لطف تو و دروویکه پیوسته باشد پی در پی آمدن آن و تابان شود برهمه آفرینش تو روشنیهای آن۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, répands ta prière, ton salut et ta bénédiction sur Saïdina Mohammad, et sur la famille de Saïdina Mohammad, ta plus noble créature, la lumière de ton horizon, le meilleur à respecter tes droits, celui que tu as envoyé avec ta réussite et ta bienveillance, prière dont, les répétitions se succèdent et les lumières brillent sur les univers.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, tarafından ihsân edilen kolaylıkla peygamber olarak gönderilmiş, görevini hakkıyla yerine getiren, nebî ve rasullerin en fazîletlisi, en yücesi, yarattıklarının en üstünü, nebîler, rasuller, melekler ve velîlerle sana ulaşan ufukların kandili, efendimiz Muhammed’e ve âl-i’ne ardı ardına devâm eden, nurları kâinâtı aydınlatan salâtla salât eyle, selâm eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ve sellim ve barik ala Seyyidüna Muhammedin ve ala ali Seyyidüna Muhammedin ekremi halkıke ve siraci ufukıke ve efdali kaimin bi hakkıkel mebusi bi teysirike ve rıfkıke salaten yetevala tekra-rüha ve telûhü alal ekvani envarüha.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اور سلام اور برکت بھیج اوپر سردار ہمارے محمدؐ کے اور اوپر آل سردار ہمارے محمد کے جو بہت بزرگ مخلوق کے ہیں۔ اور چراغ کنارے آسمان تیرے کے۔ اور افضل قائم تیرے سے ساتھ حق تیرے کے۔ بھیجے گئے خلق کی طرف ساتھ آسان کرنے تیرے کے اور نرمی تیری کے۔ ایسا درود کہ پے در پے ہو تکرار اس کا۔ اور چمکیں موجودات پر نُور اس کے۔</p>
+				<!-- 33-->
+				<p class="numbers">33<span onclick="playFrom(679.0)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ أَفْضَلِ مَمْدُوحٍ بِقَوْلِكَ، وَأَشْرَفِ دَاعٍ لِلِاعْتِصَامِ بِحَبْلِكَ، وَخَاتِمِ أَنْبِيَائِكَ وَرُسُلِكَ، صَلَاةً تُبَلِّغُنَا فِي الدَّارَيْنِ عَمِيمَ فَضْلِكَ، وَكَرَامَةَ رِضْوَانِكَ وَوَصْلِكَ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli wa ṣallim wa bārik ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin afḍali mamdūḥin biqawlika, wa ashrafi dāʿin lil iʿtiṣāmi biḥablika, wa khātimi anbiyāʾika wa rusulika, ṣalātan tuballighunā fīdārayni ʿamīma faḍlika, wa karāmata riḍwānika wa waṣlika.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat dan Salam Ta'zhim dan berkah atas Baginda kami Nabi Muhammad dan keluarga beliau, seutama-utama pujian dengan ucapan kepada Engkau, semulia-mulia Penyeru agar berpegang Teguh ajaran Agama Engkau, Penutup para Nabi dan utusan Engkau. Yaitu berupa Shalawat Ta'zhim yang bisa menyampaikan kami kepada dua desa (Dunia dan Akherat).</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, grant peace and blessings to Sayyidina Muhammad and the family of Sayyidina Muhammad, the best of what is praised with Your words, the noblest caller clinging to Your rope, and the seal of Your Prophets and Messengers. [Bless him] with a prayer that gives us Your comprehensive favour, and the honour of Your pleasure and union in both abodes.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span>  درود بفرست و سلام بفرست و برکت ده بر سردار مایان محمدؐ و بر آل سردار مایان محمدؐ که بهترین هر ستوده شده است بکلام تو و برزگترین هر خوانندۂ مردمان ست برای چنگ زدن بوین تو و آخر همه انبیای تو و رسولان تو دروویکه برساند مایان رادر هر دوجهان بافزونی بخشش تو و بزرگی خوشنووی تو و وصل تو۔ </p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, répands ta prière, ton salut et ta bénédiction sur Saïdina Mohammad et sur la famille de Saïdina Mohammad, le meilleur complimenté par ta parole, le plus honorable de ceux qui ont appelé à se prémunir par ton lien, et l'Ultime de tes prophètes et messagers, prière, nous faisant parvenir dans les deux vies, à tes bienfaits de toute sorte, à la générosité de ton agrément et à ton intimité.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, Âyetinle medh edilen en fazîletli zât, şeriatin olan ipine sarılan dâvetçilerin en şereflisi nebî ve rasullerin sonuncusu olan efendimiz Muhammed’e, onun âl-i’ne dünyâ ve âhirette bizi umûmî fazlına ve râzı olacağın keremine vuslatına eriştirecek olan salâtla salât ve selâm eyle. Bereket ihsân eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ve sellim ve barik ala Seyyidüna Muhammedin ve ala ali Seyyidüna Muhammedin efdali memdûhin bi kavlike ve eşrefi dain lil itisami bi hablike. Ve hatemi enbiyaike ve rüsülike. Salaten tübelliğuna fi ddareyni amime fadlike. Ve keramete rıdvanike ve vaslike.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اور سلام اور برکت اوپر سردار ہمارے محمدؐ کے اور اوپر آل سردار ہمارے محمدؐ کے جو افضل ہیں تعریف کئے گئے ساتھ قول تیرے کے اور بزرگ ہیں بلانے والے واسطے مظبوط پکڑنے کے ساتھ رسی تیری کے۔ اور خاتم نبیوں تیرے کے اور رسولوں تیرے کے۔ ایسا درود کہ پہنچائے تُو ہم کو بیچ دونوں جہان کے عام فضل اپنا۔ اور کرامت رضامندی اپنی اور وصال اپنا۔</p>
+				<!-- 34-->
+				<p class="numbers">34<span onclick="playFrom(710.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ أَكْرَمِ الكُرَمَاءِ مِنْ عِبَادِكَ، وَأَشْرَفِ المُنَادِينَ لِطُرُقِ رَشَادِكَ، وَسِرَاجِ أَقْطَارِكَ وَبِلَادِكَ، صَلَاةً لَا تَفْنَى وَلَا تَبِيدُ، وَتُبَلِّغُنَا بِهَا كَرَامَةَ المَزِيدِ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli wa ṣallim wa bārik ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin akramil kuramāʾi min ʿibādika, wa ashrafil munādīna liṭuruqi rashādika, wa sirāji aqṭārika wa bilādika, ṣalātan lā tafnā wa lā tabīdu, wa tuballighunā bihā karāmatal mazīd.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat dan Salam Ta'zhim atas Baginda kami Nabi Muhammad SAW seutama-utama orang yang mulia dari hamba-hamba Engkau. Semulia-mulia orang yang mengatakan pada jalan Petunjuk Engkau, lampu segala penjuru langit dan bumi Engkau yaitu berupa Rahmat Ta'zhim yang tidak rusak dan habis. Dan Rahmat Ta'zhim yang bisa menyampaikan kami melihat Dzat Engkau di Surga.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless and grant peace and blessings to Sayyidina Muhammad and the family of Sayyidina Muhammad, the noblest of Your noble slaves, and the noblest of those who call to the paths of Your guidance, and the lamp of Your regions and countries, with a blessing which does not perish nor expire, and by it, give us noble increase.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span>  درود بفرست و سلام بفرست و برکت ده برسردار مایان محمدؐ و بر آل سردار مایان محمدؐ که بزرگترین بزرگانست از بندگان تو و بزرگترین خوانندگان مردم برای رهنمائی هدایت تو و چراغ کنارهای زمین تست و شهرهای تست دروویکه فانی نشود و نابود نشود برسانی مایان را بسبب آن بزرگی زیادتی عطای خودرا۔ </p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, répands ta prière, ton salut et ta bénédiction sur Saïdina Mohammad et sur la famille de saïdina Mohammad, le plus généreux des généreux parmi tes serviteurs, le plus honorable de ceux qui ont appelé aux voies de ta raison, et le luminescent de tes contrées et tes agglomérations. Prière immortelle, nous faisant parvenir à une généreuse élévation.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, kulların arasında keremli olanların en keremlisi, irşâd yollarına çağıranların en şereflisi, bütün yerlerin ve beldelerin kandili olan efendimiz Muhammed’e, âl-i’ne bitip tükenmeyen dâimâ artan ve bizleride çeşit çeşit ikramlara ulaştıran salâtla salât ve selâm eyle. Bereket ihsân eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ve sellim ve barik ala Seyyidüna Muhammedin ve ala ali Seyyidüna Muhammedin ekremil küremai min ibadike. Ve eşrefi l münadine li turukı reşadike. Ve siraci aktarike ve biladike. Salaten la tefna ve la tebidü tübelliğuna biha kerametel mezidi.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اور سلام اور برکت اوپر سردار ہمارے محمدؐ کے اور آل سردار ہہمارے محمدؐ کے جو بزرگ ہیں سب بزرگوں کے بندوں تیرے سے۔ اور بزرگ ہیں پکارنے والوں سے واسطے راہِ ہدایت تیری کے۔ اور چراغ ہیں کناروں زمین تیرے کے اور شہروں تیرے کے۔ ایسا درود بھیج کہ نہ فانی ہو اور نہ نیست ہو۔ پہنچائے تُو ہم کو ساتھ اس کے کرامت زیادہ۔</p>
+				<!-- 35-->
+				<p class="numbers">35<span onclick="playFrom(739.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ الرَّفِيعِ مَقَامُهُ، الوَاجِبِ تَعْظِيمُهُ وَاحْتِرَامُهُ، صَلَاةً لَا تَنْقَطِعُ أَبَدَاً، وَلَا تَفْنَى سَرْمَدَاً، وَلَا تَنْحَصِرُ عَدَدَاً.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli wa ṣallim wa bārik ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadinir rafīʿi maqāmuhul wājibi taʿẓīmuhu waḥtirāmuhu, ṣalātan lā tanqaṭiʿu abadan, wa lā tafnā sarmadan, wa lā tanḥaṣiru ʿadada.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat dan Salam Ta'zhim dan Berkah atas Baginda kami Nabi Muhammad atas keluarga beliau yang tinggi derajatnya, wajib diagungkannya. Rahmat yang tidak putus-putus selamanya, tidak rusak selamanya dan tidak terhitung bilangannya.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, grant peace and blessings to Sayyidina Muhammad and the family of Sayyidina Muhammad, whose station is high, and who must be esteemed and respected. [Bless him] with a blessing that is never cut off, never perishes, and is never encompassed by number.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span> درود بفرست و سلام بفرست و برکت ده برسردار مایان محمدؐ و بر آل سردار مایان محمدؐ که بلندست جای او و واجب ست بزرگ داشتن او و نگاهدراشتن بزرگی او دروویکه بریده نشود هرگز و فانی نشود همیشه و در قید شمار نیاید از روی شمار۔ </p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, répands ta prière, ton salut et ta bénédiction sur Saïdina Mohammad, dont le rang est excellent, et dont la vénération et le respect est un devoir, Prière qui ne cesse jamais, qui s'éternise et dont le nombre est illimité.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, makâmı yüce, kendisine ta’zîm ve hürmet vâcib olan efendimiz Muhammed’e ve onun âl-i’ne, ebediyyen kesilmeyen hattâ sayılarla bile sayılamayan salâtla salât ve selâm eyle. Bereket ihsân eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ve sellim ve barik-ala Seyyidüna Muhammedin ve ala ali Seyyidina Mûhammedinir refi 'i makamühül vacibu tazimühü vehtiramühü.Salaten la tenkatı'u ebeden ve la tefna sermeden ve la tenhasirü adeden.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اور سلام اور برکت اوپر سردار ہمارے محمدؐ کے اور اوپر آل سردار ہمارے محمدؐ کے کہ بُلند ہے مقام اُن کا واجب ہے تعظیم اُن کی اور بزرگی اُن کی۔ ایسا درود کہ نہ منقطع ہو کبھی۔ اور نہ فانی ہو ہمیشہ ہو اور نہ منحصر ہو شمار میں۔</p>
+				<!-- 36-->
+				<p class="numbers">36<span onclick="playFrom(768.0)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ کَمَا صَلَّیْتَ عَلَی سَيِّدِنَا إِبرَاھیمَ وَعَلَى آلِ سَيِّدِنَا إِبرَاھیمَ فِي العَالَمِینَ إِنَّكَ حَمِيدٌ مَجِيدٌ، وَصَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كُلَّمَا ذَكَرَهُ الذَّاكِرُونَ، وَغَفَلَ عَنْ ذِكْرِهِ الغَافِلُونَ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin kamā ṣallayta ʿalā sayyidinā Ibrāhīma wa ʿalā āli sayyidinā Ibrāhīma fil ʿālamina innaka ḥamīdun majīd, wa ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin kullamā dhakarahudh dhākirūna, wa ghafala ʿan dhikrihil ghāfilūn.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda kami Nabi Muhammad SAW dan keluarga beliau. Seperti Engkau telah melimpahkan Rahmat Ta'zhim atas Nabi Ibrahim dan keluarganya. Di seluruh alam Engkau adalah Maha Terpuji dan Mulia. Dan limpahkanlah Rahmat Ta'zhim atas Nabi Muhammaddan keluarganya selama berdzikir kepada Allah orang-orang yang berdzikir dan lupa berdzikir kepada Allah orang-orang yang lupa.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, grant peace and blessings to Sayyidina Muhammad and the family of Sayyidina Muhammad as You blessed Sayyidina Ibrahim and the family of Sayyidina Ibrahim in the worlds. You are Praiseworthy, Glorious. And bless and grant peace and blessings on Sayyidina Muhammad and the family of Sayyidina Muhammad when ever he is mentioned by those who do dhikr, and whenever he is neglected by the heedless.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span>  درود بفرست بر محمدؐ و بر آل محمدؐ چنانچه درود فرستادۂ تو برابر ابرهیمؑ و بر آل ابراهیمؑ در عالمیان بدرستیکه تو ستوده شده بزرگواری - درود بفرست خدایا بر محمدؐ و بر آل محمدؐ  چانچه هرگاه یاد کنند اورا یاد کنندگان و غفلت و رزند از یاد او غافلان۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Mohammad et sur la famille de Saïdina Mohammad, comme tu as prié sur Saïdina Ibrahim et la famille de Saïdina Ibrahim, dans les univers, Tu es louable et glorieux. Et prie <span>Ô Allah</span>, sur Saïdina Mohammad et sur la famille de saïdina Mohammad, autant que l'ont évoqué les évocateurs, et ont omis son évocation les distraits.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz İbrâhîm ve onun âl-i’ne bütün alemlerde salât ettiğin gibi, efendimiz Muhammed’e ve âl- i’ne, salât eyle, Şüphesiz sen methedilmeye layık azâmet ve şeref sâhibisin. Allahım! Kendisini hatırlayanların her yad edişinde, ismini zikretmekten gafil olanların her gaflete düşmesinde Efendimiz Muhammed'e ve onun aline salat eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidüna Muhammedin ve ala ali Seyyidüna Muhammedin kema salleyte ala Seyyidüna İbrahime ve ala ali Seyyidüna İbrahime fil alemine inneke hamidün mecidün.Ve sallillahumme ala seyyidina Muhammedin ve ala aali seyyidina Muhammedin kullema zekerahuz zakirune ve ğafele an zikrihil ğafiluun.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے اور اوپر آل سردار ہمارے محمدؐ کے جیسے کہ درود بھیجا تُو نے اوپر سردار ہمارے ابراہیمؑ کے اور آل سردار ہمارے ابراہیمؑ کے بیچ عالموں کے تحقیق تُو بڑی تعریف والا بزرگی والا ہے۔ اور درود بھیج الٰہی اوپر سردار ہمارے محمدؐ کے اور اوپر آل سردار ہمارے محمدؐ کے جب تک کہ یاد کریں اُس کو یاد کرنے والے اور غفلت کریں ذکر اُن کے سے غفلت کرنے والے۔</p>
+				<!-- 37-->
+				<p class="numbers">37<span onclick="playFrom(810.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ، وَارْحَمْ سَیِّدَنَا مُحَمَّدَاً وَآلَ سَيِّدِنَا مُحَمَّدٍ، وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ، كَمَا صَلَّيْتَ وَرَحِمْتَ وَبَارَكْتَ عَلَى سَيِّدِنَا إِبْرَاهِيمَ وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَّجِيدٌ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin, warḥam Muḥammadan wa āla sayyidinā Muḥammadin, wa bārik ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin, kamā ṣallayta wa raḥimta wa bārakta ʿalā sayyidinā Ibrāhīma wa ʿalā āli sayyidinā Ibrāhīma innaka ḥamīdun majīd.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Nabi Muhammad SAW dan keluarganya. Kasihanilah Nabi Muhammad dan keluarganya, Dan berkahilah Nabi Muhammad dan keluarganya, seperti Engkau telah melimpahkan Rahmat Ta'zhim, kasih sayang dan barokah atas Nabi Ibrahim dan keluarganya. Sesungguhnya Engkau adalah Maha Terpuji dan Mulia.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, grant peace and blessings to Sayyidina Muhammad and the family of Sayyidina Muhammad. And show mercy to Sayyidina Muhammad and the family of Sayyidina Muhammad. And sanctify Sayyidina Muhammad, and the family of Sayyidina Muhammad, as You blessed, showed mercy to, and sanctified Sayyidina Ibrahim and the family of Sayyidina Ibrahim. You are Praiseworthy, Glorious.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span> درود بفرست بر محمدؐ و بر آل محمدؐ و رحمت کن محمدؐ را و آل محمدؐ را و برکت ده بر محمدؐ و بر آل محمدؐ چنانچه درود فرستادۂ تو و رحمت کردۂ تو و برکت دادۂ تو بر ابراهیم و بر آل ابرهیم بدرستیکه تو ستوده شده بزرگواری۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, répands ta prière sur Saïdina Mohammad et la famille de Saïdina Mohammad, ta miséricorde sur Saïdina Mohammad et la famille de Saïdina Mohammad, et ta bénédiction sur Saïdina Mohammad et la famille de Saïdina Mohammad, comme tu as répandu ta prière, ta miséricorde et ta bénédiction sur Saïdina Ibrahim et sur la famille de Saïdina Ibrahim, Tu es louable et glorieux.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, efendimiz İbrâhîm ve onun âl-i’ne salât, merhamet ve bereket ihsân ettiğin gibi, efendimiz Muhammed’e ve âl-i’ne, salât eyle, merhamet eyle, bereket ihsân eyle. Şüphesiz sen methedilmeye layık azâmet ve şeref sâhibisin.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidüna Muhammedin ve ala ali Seyyidüna Muhammedin verham seyyidina Muhammeden ve ali Seyyidüna Muhammedin ve barik ala Seyyidüna Muhammedin ve ala ali Seyyidüna Muhammedin kema salleyte ve rahimte ve barekte ala Seyyidüna İbrahime ve ala ali Seyyidüna İbrahime inneke hamidün mecidün.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ کے اور اوپر آل سردار ہمارے محمدؐ کے۔ اور رحم کر اُوپر سردار ہمارے محمدؐ کے اور آل سردار ہمارے محمدؐ کے اور برکت بھیج اوپر سردار ہمارے محمدؐ کے اور اوپر آل سردار ہمارے محمد کے۔ جیسا کہ درود بھیجا تُو نے اور رحمت بھیجی تُو نے اور برکت بھیجی تُو نے اوپر سردار ہمارے ابراہیمؑ کے اور اوپر آل سردار ہمارے ابراہیمؑ کے۔ تحقیق تُو بڑی تعریف والا بزرگی والا ہے۔</p>
+				<!-- 38-->
+				<p class="numbers">38<span onclick="playFrom(851.0)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبيِّ الأُمِّيِّ الطَّاهِرِ المُطَهَّرِ وَعَلَى آلِهِ وَسَلِّمْ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā Muḥammadin nabiyyil ummiyyiṭ ṭahiril muṭahhari wa ʿalā ālihi wa sallim.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat dan Salam Ta'zhim atas Baginda kami Nabi Muhammad dan keluarga beliau Nabi yang Ummi, Nabi yang bersih dan dibersihkan dari noda dan dosa.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless, and grant peace and blessings to Sayyidina Muhammad, the Unlettered Prophet, the pure and made pure, and upon his family, and grant them peace.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span> درود بفرست بر سردار مایان محمدؐ که پیغمبر ناخوانده و نانویسنده است پاک کرده شده و بر آل وی و سلام بفرست۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina Mohammad le prophète illettré, le pur, le purifié, et sur sa famille et salue-les.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, maddeten mânen temiz ve temizlenmiş olan, ümmî nebî efendimiz Muhammed’e ve onun âl-i’ne salât eyle. selâm eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidüna Muhammedinin nebiyyil ümmiyit-tahiril mutahhari ve ala alihi ve sellim.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے محمدؐ نبی اُمّی کے جو پاک ہیں پاک کئے گئے ہیں اور اوپر آل اُن کی کے اور سلام۔</p>
+				<!-- 39-->
+				<p class="numbers">39<span onclick="playFrom(864.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى مَنْ خَتَمْتَ بِهِ الرِّسَالَةَ، وَأَيَّدْتَّهُ بِالنَّصْرِ وَالكَوْثَرِ وَالشَّفَاعَةِ.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā man khatamta bihir risālata wa ayyadtahu binaṣri wal kawthari wash shafāʿah.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas orang yang menjadi Penutup Utusan dan diperkuat dengan kemenangan Telaga Al Kautsar dan Syafaat.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, bless the one with whom You sealed the message, and the one You confirmed with victory, Al-Kawthar and intercession.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span> درود بفرست بر کسیکه ختم کرده تو بوی پیغمبری را و قوت داوی تو اورا بیاری دادن و بدادن حوض کوثر بقبول کردن شفاعت او۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur celui par lequel tu a parachevé le Message, que tu as confirmé par la victoire, le Kawtar et l'intercession.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allahım, kendisiyle peygamberliği sona erdirdiğin, kevser havuzu ve şefaat etme hakkı vermekle kendisine yardım edip kuvvetlendirdiğin zâta selâm eyle.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala men hatemte bihir risalete ve eyyedtehü binnasri vel kevseri veşşefaati.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر اُن کے کہ ختم کیا تُو نے ساتھ اُن کے رسالت کو۔ اور تائید کی اُن کی ساتھ مدد اور کوثر اور شفاعت کے۔</p>
+				<!-- 40-->
+				<p class="numbers">40<span onclick="playFrom(875.5)" style="z-index: -1">&nbsp&#x25B6&#xFE0E;</span></p>
+				<p class="lang arabicText" lang="ar" dir=""><span>اللَّهُمَّ
+
+</span>
+ صَلِّ عَلَى سَيِّدِنَا وَمَوْلَانَا مُحَمَّدٍ نَبِيِّ الحُكْمِ وَالحِكْمَةِ السِّرَاجِ الوَهَّاجِ، المَخْصُوصِ بِالْخُلُقِ العَظِيمِ، وَخَتْمِ الرُّسُلِ ذِي المِعْرَاجِ، وَعَلَى آلِهِ وَأَصْحَابِهِ وَأَتْبَاعِهِ السَّالِكِينَ عَلَى مَنْهَجِهِ القَوِيمِ، فَأَعْظِمِ <span>اللَّهُمَّ
+
+</span>
+ بِهِ مِنْهَاجَ نُجُومِ الإِسْلَامِ، وَمَصَابِيحِ الظَّلَامِ، المُهْتَدَى بِهِمْ فِي ظُلْمَةِ لَيْلِ الشَّكِّ الدَّاجِ، صَلَاةً دَائِمَةً مُسْتَمِرَّةً مَا تَلَاطَمَتْ فِي الأَبْحُرِ الأَمْوَاجُ، وَطَافَ بِالْبَيْتِ العَتِيقِ مِنْ كُلِّ فَجٍّ عَمِيقٍ الحُجَّاجُ، وَأَفْضَلُ الصَّلَاةِ وَالتَّسْلِيمِ، عَلَى سَيِّدِنَا مُحَمَّدٍ رَسُولِهِ الكَرِيمِ، وَصَفْوَتِهِ مِنَ العِبَادِ، وَشَفِيعِ الخَلَائِقِ فِي المِيعَادِ، صَاحِبِ المَقَامِ المَحْمُودِ، وَالحَوْضِ المَوْرُودِ، النَّاهِضِ بِأَعْبَاءِ الرِّسَالَةِ وَالتَّبْلِيغِ الأَعَمِّ، وَالمَخْصُوصِ بِشَرَفِ السِّعَايَةِ فِي الصَّلَاحِ الأَعْظَمِ، صَلَّى اللهُ عَلَيْهِ وَعَلَى آلِهِ صَلَاةً دَائِمَةً مُسْتَمِرَّةَ الدَّوَامِ عَلَى مَرِّ اللَّيَالِي وَالأَيَّامِ، فَهُوَ سَيِّدُ الأَوَّلِينَ وَالآخِرِينَ، وَأَفْضَلُ الأَوَّلِينَ وَالآخِرِينَ، عَلَيْهِ أَفْضَلُ صَلَاةِ المُصَلِّينَ، وَأَزْكَى سَلَامِ المُسَلِّمِينَ وَأَطْيَبُ ذِكْرِ الذَّاكِرِينَ، وَأَفْضَلُ صَلَوَاتِ اللَّهِ، وَأَحْسَنُ صَلَوَاتِ اللَّهِ، وَأَجَلُّ صَلَوَاتِ اللَّهِ، وَأَجْمَلُ صَلَوَاتِ اللَّهِ، وَأَكْمَلُ صَلَوَاتِ اللَّهِ، وَأَسْبَغُ صَلَوَاتِ اللَّهِ، وَأَتَمُّ صَلَوَاتِ اللَّهِ، وَأَظْهَرُ صَلَوَاتِ اللَّهِ، وَأَعْظَمُ صَلَوَاتِ اللَّهِ، وَأَذْكَى صَلَوَاتِ اللَّهِ، وَأَطْيَبُ صَلَوَاتِ اللَّهِ، وَأَبْرَكُ صَلَوَاتِ اللَّهِ، وَأَزْكَى صَلَوَاتِ اللَّهِ، وَأَنْمَى صَلَوَاتِ اللَّهِ، وَأَوْفَى صَلَوَاتِ اللَّهِ، وَأَسْنَی صَلَوَاتِ اللَّهِ، وَأَعْلَى صَلَوَاتِ اللَّهِ، وَأَكْثَرُ صَلَوَاتِ اللَّهِ، وَأَجْمَعُ صَلَوَاتِ اللَّهِ، وَأَعَمُّ صَلَوَاتِ اللَّهِ، وَأَدْوَمُ صَلَوَاتِ اللَّهِ، وَأَبْقَى صَلَوَاتِ اللَّهِ، وَأَعَزُّ صَلَوَاتِ اللَّهِ، وَأَرْفَعُ صَلَوَاتِ اللَّهِ، وَأَعْظَمُ صَلَوَاتِ اللَّهِ، عَلَى أَفْضَلِ خَلْقِ اللَّهِ، وَأَحْسَنِ خَلْقِ اللَّهِ، وَأَجَلِّ خَلْقِ اللَّهِ، وَأَكْرَمِ خَلْقِ اللَّهِ، وَأَجْمَلِ خَلْقِ اللَّهِ، وأَكْمَلِ خَلْقِ اللَّهِ، وَأَتَمِّ خَلْقِ اللَّهِ، وَأَعْظَمِ خَلْقِ اللَّهِ، عِنْدَ اللَّهِ رَسُولِ اللَّهِ، وَنَبِيِّ اللَّهِ، وَحَبِيبِ اللَّهِ، وَصَفِيِّ اللَّهِ، وَنَجِيِّ اللَّهِ، وَخَلِيلِ اللَّهِ، وَوَلِيِّ اللَّهِ، وَأَمِينِ اللَّهِ، وَخِيرَةِ اللَّهِ مِنْ خَلْقِ اللَّهِ، وَنُخْبَةِ اللَّهِ مِنْ بَرِيَّةِ اللَّهِ، وَصَفْوَةِ اللَّهِ مِنْ أَنْبِيَـاءِ اللَّهِ، وَعُرْوَةِ اللَّهِ، وَعِصْمَةِ اللَّهِ، وَنِعْمَةِ اللَّهِ، وَمِفْتَاحِ رَحْمَةِ اللَّهِ، المُخْتَارِ مِنْ رُسُلِ اللَّهِ، المُنْتَخَبِ مِنْ خَلْقِ اللَّهِ، الفَائِزِ بِالْمَطْلَبِ، فِي المَرْهَبِ وَالمَرْغَبِ، المُخْلَصِ فِيمَا وُهِبَ، أَكْرَمِ مَبْعُوثٍ، أَصْدَقِ قَائِلٍ، أَنْجَحِ شَافِعٍ، أَفْضَلِ مُشَفَّعٍ، الأَمِينِ فِيمَا اسْتُودِعَ، الصَّادِقِ فِيمَا بَلَّغَ، الصَّادِعِ بِأَمْرِ رَبِّهِ، المُضْطَلِعِ بِمَا حُمِّلَ، أَقْرَبِ رُسُلِ اللَّهِ إِلَى اللَّهِ وَسِيلَةً، وَأَعْظَمِهِمْ غَدَاً عِنْدَ اللَّهِ مَنْزِلَةً وَفَضِيلَةً، وَأَكْرَمِ أَنْبِيَاءِ اللَّهِ الكِرَامِ الصَّفْوَةِ عَلَى اللَّهِ، وَأَحَبِّهِمْ إِلَى اللَّهِ، وَأَقْرَبِهِمْ زُلْفَى لَدَى اللَّهِ، وَأَكْرَمِ الخَلْقِ عَلَى اللَّهِ، وَأَحْظَاهُمْ وَأَرْضَاهُمْ لَدَى اللَّهِ، وَأَعْلَى النَّاسِ قَدْرَاً، وَأَعْظَمِهِمْ مَحَلَّاً، وَأَكْمَلِهِمْ مَحَاسِنَاً وَفَضْلَاً، وَأَفْضَلِ الأَنْبِيَاءِ دَرَجَةً، وَأَكْمَلِهِمْ شَرِيعَةً، وَأَشْرَفِ الأَنْبِيَاءِ نِصَابَاً، وَأَبْيَنِهِمْ بَيَانَاً وَخِطَابَاً، وَأَفْضَلِهِمْ مَوْلِدَاً وَمُهَاجَرَاً وَعِتْرَةً وَأَصْحَابَاً، وَأَكْرَمِ النَّاسِ أَرُومَةً، وَأَشْرَفِهِمْ جُرْثُومَةً، وَخَيْرِهِمْ نَفْسَاً، وَأَطْهَرِهِمْ قَلْبَاً، وَأَصْدَقِهِمْ قَوْلَاً، وَأَزْكَاهُمْ فِعْلَاً، وَأَثْبَتِهِمْ أَصْلَاً، وَأَوْفَاهُمْ عَهْدَاً، وَأَمْكَنِهِمْ مَجْدَاً، وَأَكْرَمِهِمْ طَبْعَاً، وَأَحْسَنِهِمْ صُنْعَاً، وَأَطْيَبِهِمْ فَرْعَاً، وَأَكْثَرِهِمْ طَاعَةً وَسَمْعَاً، وَأَعْلَاهُمْ مَقَامَاً، وَأَحْلَاهُمْ كَلَامَاً، وَأَزْكَاهُمْ سَلَامَاً، وَأَجَلِّهِمْ قَدْرَاً، وَأَعْظَمِهِمْ فَخْرَاً، وَأَسْنَاهُمْ فَخْرَاً، وَأَرْفَعِهِمْ فِي المَلَإِ الأَعْلَى ذِكْرَاً، وَأَوْفَاهُمْ عَهْدَاً، وَأَصْدَقِهِمْ وَعْدَاً، وَأَكْثَرِهِمْ شُكْرَاً، وَأَعْلَاهُمْ أَمْرَاً، وَأَجْمَلِهِمْ صَبْرَاً، وَأَحْسَنِهِمْ خَيْرَاً، وَأَقْرَبِهِمْ يُسْرَاً، وَأَبْعَدِهِمْ مَكَانَاً، وَأَعْظَمِهِمْ شَاْنَاً، وَأَثْبَتِهِمْ بُرْهَانَاً، وَأَرْجَحِهِمْ مِيزَانَاً، وَأَوَّلِهِمْ إِيمَانَاً، وَأَوضَحِهِمْ بَيَانَاً، وَأَفْصَحِهِمْ لِسَانَاً، وَأَظْهَرِهِمْ سُلْطَانَاً.</p>
+				<p class="lang translit" style="display: none;" lang="en" dir="ltr"><span>Allāhumma</span> ṣalli ʿalā sayyidinā wa mawlānā Muḥammadin nabiyyil ḥukmi wal ḥikmatis sirājil wahhājil makhṣūṣi bil khuluqil ʿaẓīmi, wa khatmir rusuli dhil miʿrāji, wa ʿalā ālihi wa aṣ-hābihi wa atbāʿihis sālikīna ʿalā manhajihil qawīmi, fa aʿẓim <span>Allāhumma</span> bihi minhāja nujūmil islāmi, wa maṣābīḥiẓ ẓalāmil muhtadi bihim fī ẓulmati laylish shakkid dāji, ṣalātan dāʾimatan mustamirratan mā talāṭamat fil ʾabḥuril ʾamwāju, wa ṭāfa bil baytil ʿatīqi min kulli fajin ʿamīqinil ḥujjāju, wa afḍaluṣ ṣalāti wattaslīmi ʿalā sayyidinā Muḥammadin rasūlihil karīmi, wa ṣafwatihi minal ʿibādi, wa shafīʿil khalāʾiqi fil mīʿādi, ṣāḥibil maqāmil maḥmūdi, wal ḥawḍil mawrūdin,  nāhiḍi bi aʿbāʾir risālati wattablīghil aʿammi, wal makhṣūṣi bisharafis siʿāyati fīṣ ṣalāḥil aʿẓami, ṣallaLlahu ʿalayhi wa ʿalā ālihi ṣalātan dāʾimatan mustamirratad dawāmi ʿalā marrillayāli wal ayyāmi, fa huwa sayyidul awwalīna wal ākhirīna, wa afḍalul awwalīna wal ākhirīna,ʿalayhi afḍalu ṣalātil muṣallīna, wa azkā salāmil musallimīna, wa aṭyabu dhikridh dhākirīna, wa afḍalu ṣalawātiLlahi, wa aḥsanu ṣalawātiLlahi, wa ajallu ṣalawātiLlahi, wa akmalu ṣalawātiLlahi, wa asbaghu ṣalawātiLlahi, wa atammu ṣalawāti Aallahi, wa aẓ-haru ṣalawātiLlahi, wa aʿẓamu ṣalawātiLlahi, wa adhka ṣalawātiLlahi, wa aṭyabu ṣalawātiLlahia, wa abraku ṣalawātiLlahi, wa azkā ṣalawātiLlahi, wa anmā ṣalawātiLlahi, wa awfā ṣalawātiLlahi, wa asnā ṣalawātiLlahi, wa aʿla ṣalawātiLlahi, wa aktharu ṣalawātiLlahi, wa ajmaʿu ṣalawātiLlahi, wa aʿammu ṣalawātiLlahi, wa adwamu ṣalawātiLlahi, wa abqā ṣalawātiLlahi, wa aʿazzu ṣalawātiLlahi, wa arfaʿu ṣalawātiLlahi, wa aʿẓamu ṣalawātiLlahi, ʿalā afḍali khalqiLlāhi, wa aḥsani khalqiLlāhi, wa ajalli khalqiLlāhi, wa akrami khalqiLlāhi, wa ajmali khalqiLlāhi, wa akmali khalqiLlāhi, wa atammi khalqiLlāhi, wa aʿẓami khalqiLlāhi, ʿinda Allāhi RasūliLlāhi, wa nabiyyiLlāhi, wa ḥabībiLlāhi, wa ṣafiyyiLlāhi, wa najiyyiLlāhi, wa khalīliLlāhi, wa waliyyiLlāhi, wa amīniLlāhi, wa khayratiLlāhi min khalqiLlāhi, wa nukhbatiLlāhi min barīʾatiLlāhi, wa ṣafwatiLlāhi min anbiyāʾiLlāhi, wa urwatiLlāhi, wa ʿismatiLlāhi, wa niʿmatiLlāhi, wa miftāḥi raḥmatiLlāhi. Almukhtāri min rusuliLlāhil muntakhabi min khalqiLlāhil fāʾizi bil maṭlabi fīl marhabi wal marghabil mukhlaṣi ma wuhiba, akrami mabʿūthin, aṣdaqi qāʾilin, anjaḥi shāfiʿin, afḍāli mushaffaʿinil amīni fīmās stūdiʿaṣ ṣadiqi fīmā ballaghaṣ ṣadiʿi bi amri rabbihil muḍṭaliʿi bimā ḥummila, aqrabi rusuliLlāhi ilAllāhi wasīlatan, wa aʿẓamihim ghadan ʿindAllāhi manzilatan wa faḍīlatan, wa akrami anbiyāʾiLlāhil kirāmiṣ ṣafwati ʿalAllāhi, wa aḥabihim ilAllāhi wa aqrabihim zulfa ladAllāhi, wa akramil khalqi ʿalAllāhi wa aḥẓāhum wa arḍāhum ladAllāhi, wa aʿlan nāsi qadran, wa aʿẓamihim maḥallan, wa akmalihim mahāsinan wa faḍlan, wa afḍalil anbiyāʾi darajatan, wa akmalihim sharīʿatan, wa ashrafil anbiyāʾi niṣāban, wa abyanihim bayānan wa khiṭāban, wa afḍalihim mawlidan wa muhājiran wa ʿitratan, wa aṣ-ḥāban, wa akramin nāsi arūmatan, wa ashrafihim jurthūmatan, wa khayrihim nafsan, wa aṭharihim qalban, wa aṣdaqihim qawlan, wa azkāhum fīʿlan, wa athbatihim aṣlan, wa awfāhum ʿahdan, wa amkanihim majdan, wa akramihim ṭabʿan, wa aḥsanihim ṣunʿan wa aṭyabihim farʿan, wa aktharihim ṭāʿatan wa samʿan, wa aʿlāhum maqāman, wa aḥlāhum kalāman, wa azkāhum salāman, wa ajālihim qadran, wa aʿẓamihim fakhran, wa asnāhum fakhran, wa arfaʿihim fil malaʾil aʿla dhikran, wa awfāhum ʿahdan, wa aṣdaqihim waʿdan, wa aktharihim shukran, wa aʿlāhum amran, wa ajmālihim ṣabran, wa aḥsanihim khayran, wa aqrabihim yusran, wa abʿadihim makānan, wa aʿzamihim shaʾnan, wa athbatihim burhānan, wa arjaḥihim mīzānan, wa awwālihim īmānan, wa awḍaḥihim bayānan, wa afṣaḥihim lisānan, wa aẓharihim sulṭāna.</p>
+				<p class="lang transID" style="display: none;" lang="id" dir="ltr">Ya Allah, limpahkanlah Rahmat Ta'zhim atas Baginda kami Nabi Muhammad SAW, Nabi yang menghukumi ummat manusia dengan adil dan bijaksana, lampu yang bercahaya khusus (melebihi keutamaannya di antara ummat manusia) sebab dengan akhlak beliau yang Agung. Penutup para Rasul. Pemilik Mi'raj (Tangga di langit). Demikian juga atas keluarga, sahabat, pengikut-pengikutinya di atas jalan yang lurus. Agungkanlah Ya Allah, sebab beliau cahaya bintang-bintang Islam dan lampu yang menerangi gelap dan sebab mereka tumpukkanlah kegelapan malam yang meragukan. Yaitu Rahmat Ta'zhim yang kekal dan bersambung-sambung bagaikan gelombang di laut. Dan Rahmat Taz'him yang kekal dan bersambung bagaikan Tawaf orang yang ibadah haji yang berdatangan dari berbagai penjuru. Dan mudah-mudahan pula Rahmat dan Salam Ta'zhim yang lebih utama tetap atas Nabi Muhammad SAW utusan yang Mulia. Hamba yang bersih pemberi Safa'at pada makhluk di hari kiamat. Pemiliki Maqam Mahmud. Pemilik Telaga yang didatangi. Orang yang kuat menanggung resiko misi Risalah. Penyampai orang umum dan khusus dengan mengutamakan amal demi kemaslahatan yang agung untuk agama dan umum guna bertawajuh dan mencapai ridhonya. Mudah-mudahan Rahmat Ta'zhim Allah tetap atas beliau dan keluarganya, yaitu berupa Rahmat Ta'zhim yang kekal di atas perjalanan malam dan siang. Beliau adalah Baginda orang-orang terdahulu dan kemudian Beliau adalah seutama-utama Shalawat orang yang bershalawat. Seindah-indah Salam Ta'zhim orang yang bersalam, seharum dzikir orang yang berdzikir, seutama-utama Rahmat Allah. Sebaik-baiknya Rahmatnya, seagung-agung Rahmatnya, seindah Rahmatnya, sesempurna Rahmat, seluas Rahmatnya, sesempurna Rahmatnya, Sebersih Rahmatnya, seagung Rahmatnya seharum Rahmatnya, Paling berkah Rahmatnya, Paling cukup Rahmatnya, Paling bersih Rahmatnya, Paling mencukupi Rahmatnya, Paling sempurna Rahmatnya, Paling tinggi Rahmatnya, Paling luhur Rahmatnya, Paling banyak Rahmatnya, Paling kumpul Rahmatnya, Paling Merata Rahmatnya, Paling kekal Rahmatnya Paling Mulya Rahmatnya, Paling tinggi Derajat Rahmatnya, Paling Agung Rahmatnya atas seutama-utama makhluk-Nya. Sebagus-bagus makhluk Allah seutama-utama makhluk Allah. Semulia-mulai makhluk Allah. Seindah-indah makhluk Allah. Sesempurna-sempurna makhluk Allah. Sesempurna makhluk Allah. Seagung-agung makhluk ALlah dihadapan Allah yaitu Rasulullah. Nabi Allah, kekasih Allah, Shafiyallah, Nayiyilah, Khalilillah, Waliyillah, Aminillah, Khairatillah Min Khalqillah, Nubbatillah, Min Bariyyatillah, Shafwatillah, Min Anbiyaillah, 'Urwatillah, 'Ishmatillah, Ni'matillah, Pembuka Rahmat , dipilih dari utusan-utusan Allah, terbaik di antara makhluk Allah, sellau berdo'a dalam keadaan takut dan harap, bersih apa yang disampaikan, semulia-mulia utusan, sejujur-jujur ucapan, seagung-agung orang memberi syafa'at, seutama-utama orang yang diterima syafa'atnya, terpercaya apa yang didak'wahkan, jujur apa yang disampaikan, menerangkan kebenarang dengan apa yang diperintahkan Allah, Bangkit dengan apa yang dibebankan, Rasul terdekat kepada Allah, perantara teragung besok di hari kiamat, pemilik derajat tinggi dan keutamaan dihadapan Allah, termulia diantara nabi-nabi Allah yang Mulia, terbersih dihadapan Allah, tercinta di hadapan Allah, terdekat tempatnya dihadapan Allah, termulia di antara makhluk Allah, terdekat dan di ridhoi di hadapan Allah, tertinggi derajat diantara para Nabi, paling sempurna keterangan dan petunjuknya, paling mulia kelahiran, hijrah, keluarga dan sahabatnya, termulia bangsanya, dirinya dan terbersih hatinya, terjujur ucapannya, terbersih perbuatannya (bertambah pahalanya), tetap nasabnya, terjaga janjinya, termulia nasab-nasab sebelumnya, termulia wataknya, terbaik perbuatan Ma'rufnya, terbagus keturunannya, terbanyak keta'atan dan mendengarkan perintahnya, tertinggi mawamnya, termanus tutur katanya, terbagus ucapan salamnya, teragung derajatnya teragung kedudukannya, cemerlang keagungannya, tertinggi derajatnya disebut-sebut di alam malaikat, terjaga jani-janjinya, terjujur janji-janjinya, terbanyak syukurnya, tertinggi perbuatannya, terindah kesabarannya, terbagus kebajikannya, termudah syareatnya, tertinggi derajatnya, teragung pangkatnya, tetap kekal Dalil-dalilnya, terunggul timbangnya, orang-orang yang pertama-tama beriman di alam arwah, jelas ucapan Dalil-dalilnya, terfasih ucapannya, terkuat kerajaannya.</p>
+				<p class="lang trans" style="display: none;" lang="en" dir="ltr"><span>O Allah</span>, grant peace and blessings to Sayyidina, Mawlana Muhammad, the Prophet of judgement and wisdom, the radiant lamp endowed with great character, the Seal of the Messengers, Possessor of the Mi'raj, and bless his family and Companions and followers, the travellers on his straight path. <span>O Allah</span>, by him exalt the path of the stars of Islam and the lamps that guide them in the darkness of the night of dark doubt, with a constant blessing which continues as long as the waves collide in the seas and hajjis from every deep ravine perform tawaf of the Ka'bah. May the best of blessings and peace be upon Sayyidina Muhammad, His noble Messenger, His sincere friend from the servants, the intercessor for creatures when they are brought back, the possessor of the praiseworthy station and the visited wellspring. The one who took on the burden of the message and conveyed it universally, and was endowed with the nobility of striving for the greatest righteousness. May Allah bless him and his family and companions with a constant blessing continuing forever with the endless passage of nights and days. He is the master of the first and the last, and the best of the first and the last. May the best blessings of those who bless him be upon him, the purest of peace of those who ask for peace for him. The most pleasing mention of those who mention him. The most excellent of the blessings of Allah. The best of the blessings of Allah. The most glorious of the blessings of Allah. The most beautiful of the blessings of Allah. The most bountiful of the blessings of Allah. The most abundant of the blessings of Allah. The most complete of the blessings of Allah. The most manifest of the blessings of Allah. The greatest of the blessings of Allah. The purest of the blessings of Allah. The most pleasing of the blessings of Allah. The most blessed of the blessing of Allah. The immaculate blessings of Allah. The most prosperous of the blessings of Allah. The fullest of the blessings of Allah. The most radiant of the blessings of Allah. The highest of the blessings of Allah. The most lavish of the blessings of Allah. The most undivided of the blessings of Allah. The most universal of the blessings of Allah. The most lasting of the blessings of Allah. The most enduring of the blessings of Allah. The mightiest of the blessings of Allah. The highest of the blessings of Allah. The greatest of the blessings of Allah, on the most excellent of Allah's creation. The epitome of Allah's creation. The most glorious of Allah's creation. The noblest of Allah's creation. The most beautiful of Allah's creation. The most perfect of Allah's creation. The most complete of Allah's creation. The greatest of Allah's creation with Allah. The Messenger of Allah. The Prophet of Allah. The beloved of Allah. The sincere friend of Allah. The intimate friend of Allah. The friend of Allah. The wali of Allah. The trusted of Allah. The select of Allah from the creation of Allah. The noble of Allah from Allah's creation. The sincere friend of Allah from among the Prophets of Allah. The hand-hold of Allah. The safeguard of Allah. The blessing of Allah. The key of the mercy of Allah. The one chosen from the Messengers of Allah, selected from Allah's creation, obtaining the goal in fear and desire, sincere in what he was given, the most noble of delegated ones, the most truthful in speech, most successful in intercession, the best of intercessors, most trustworthy in what was entrusted to him, truthful in what he conveyed, compliant to the command of his Lord, responsible for what he was given. The Messenger of Allah with the closest means of mediation with Allah, and the greatest of them in the future in degree and virtue with Allah, the noblest of the noble Prophets of Allah, the sincere friend of Allah and the most beloved of them to Allah, the nearest of them with Allah, the noblest of creation to Allah, the most fortunate of them, the most agreeable with Allah, the highest of people in rank, the greatest of them in place, the most perfect in good qualities and bounty, the best of the Prophets in degree and the most perfect of them in the Shari'a, the noblest of the Prophets in position, clearest of them in proofs and speech, the best of them in birth, emigration, family and Companions, the noblest of people in origin and the noblest in descent, the best of them in self, the purest of them in heart, the most truthful in speech, the purest of them in action, the firmest in source, the most loyal to covenants, the most distinguished in glory, the most perfect in nature, the sincerest in actions, the most pleasant in branch, the most obedient, the highest in station, the sweetest in speech, the purest in peace, the most glorious in rank, the greatest in glorification, the most radiant in glory, the highest in mention in the Highest Assembly, and most faithful to covenants, the most sincere in promise, the most thankful, the highest in command, the most beautiful in patience, the best in good, nearest in ease and loftiest in position, the greatest in concern, the most confirmed of evidence, superior in measure, the first in faith, the clearest in proof, the most eloquent of tongue and the most manifest of power.</p>
+				<p class="lang transFA" style="display: none;" lang="fa" dir="rtl"><span>خدایا</span> درود بفرست بر سردار مایان و مالک مایان محمدؐ که پیغمبر صاحب حکومت و صاحب حکمت ست چراغیست افراخته و تابان خاص کرده شده بخوی بزرگ و ختم پیغمبران صاحبِ معراج و بر آل وی و یاران وی و پیروان وی که روندگانند بر راه روشن او که درو کجی نیست پس چه بزرگ ست۔ <span>خدایا</span>  بسب آن راه روشن ستارگان وین مسلمانی  وچراغهای شبهای تاریک راه یافته شده است بسبب آنها در تاریکی شب گمان که سخت تاریک ست دروویکه باشند روان باشد پی در پی تازمانیکه برهم زنند بایکویگر در دریاها موجها و طواف کنند بخانۂ قویم از هر آینده از راه درود را زحج کنندگان -  و افزون ترین درود سلام نازل باد بر محمدؐ که فرستادۂ اوست صاحبِ بزرگی و برگزیدۂ اوست از بندگان و شفاعت کنندۂ آفریدگان در وقت وعده صاحب مقام ستوده شده و حوضیکه درود کرده شود بران استاده برو قوت ببارهای گران پیغمبری و برمانیدن احکام الٰهی که شامل ترست خاص کرده شده است بعمل کردن بکوشش در آراستگی بکار خلق بزرگترست درود فرستد خدا بروی و بر آل وی دروویکه همیشه باشد جاری باشد همیشه بر جاری بودن شبها و روزها پس وی سردار پیشینیان و پسینیان و بزرگترین پیشینیان و پسینیان بروی باد بزرگترین درود گویندگان و پاکترین سلام سلام گویندگان و خوب ترین یاد کادکنندگان و بزرگترین درود های خدا و نیکوترین درودهای خدا و بزرگترین دوردهای خدا و زیبا ترین درودهای خدا و کامل ترین درودهای خدا و تمام ترین درودهای خدا و کامل ترین درود های خدا و روشن ترین درودهای خدا و بزرگترین درودهای خدا و روشن ترین درودهای خدا و پاکیزه ترین درودهای خدا و افزون ترین درودهای خدا و پاکیزه ترین درودهای خدا و افزاینده ترین درودهای خدا و تمام ترین درودهای خدا و بلند ترین درودهای خدا و بزرگترین درودهای خدا و بسیار ترین درودهای خدا و فراهم آینده ترین درودهای خدا و شامل ترین درودهای خدا و پاینده ترین درودهای خدا و پاینده ترین درود های خدا و عزیز ترین درود های خدا و بلند ترین درود های خدا و بزرگترین درود های خدا ناز باد بر بهترین آفرینش خدا و نیکوترین آفرینش خدا و بزرگترین آفرینش خدا و خوب ترین آفرینش خدا و نیکو ترین آفرینش خدا وکامل ترین آفرینش خدا و تمام ترین آفرینش خدا و بزرگترین آفرینش خدا نزد خدا فرستادۂ خدا و پیغمبر خدا و دوست خدا و برگزیدۂ خدا و چیدۂ خدا و دوست خدا و ولی خدا و امانت دار خدا و برگزیدۂ خدا از آفرینش خدا و پسنویدۂ خدا از آفریدگان خدا و بزگزیدۂ خدا از پیغمبران خدا و دستاویز خدا و محل حفظ خدا و نعمت خدا و کلید رحمت خدا برگزیده از پیغمبران خدا چیده شده از آفرینش خدا رسنده بمقصود در حال خوف و امید پاک کرده شده در انچه و بزرگترین هر برانگیخته شده راستگو ترین هر گوینده ظفریاینده ترین هر شفاعت کننده بزرگترین هر شفاعت قبول کرده شده اهلِ اعتماد با امانت در چیزیکه سپرد شده راستگو در چیزیکه رساینده آشکاره کنندۂ فرمودۂ پروردگار خود را ستاده بقوت بچیزیکه بارکرده شده نزویکترین پیغمبران خدا بسوی خدا وز روی وسیله و بزرگترین آنها روز قیامت نزد خدا از روی منزلت وبزرگی و بزرگترین پیغمبران خدا که بزرگان برگزیدگانند بر خدا دوست ترین ایشان بسوی خدا و نزویکترین ایشان از روی شرف و منزلت نزد خدا و بزرگترین همه آفرنیش بر خدا و نزویک ترین ایشان بمرتبه و جاه و برگزیده ترین ایشان نزد خدا و بلند ترین همه آدمیان ازروی و مرتبه و بزرگترین ایشان از روی منزلت و کامل ترین ایشان ازروی کردار های نیک و افزودنی و بزرگترین پیغمبران ازروی مرتبه کامل ترین ایشان از وی وین و بزرگترین پیغمبران ازروی اصل و روشن ترین ایشان ازروی کلام و سخن و بهترین ایشان ازروی مکان و مکان هجرت و آل و یاران و بزرگترین همه مردمان ازروی اصل و بزرگترین ایشان ازروی جماعت و بهترین ایشان ازروی نفس و پاکترین ایشان ازروی دل و راستگو ترین ایشان ازروی سخن و پاکیزه ترین ایشان از روی کا کارکردن و استوار ترین ایشان ازروی نسب  وفاکننده ترین ایشان ازروی پیمان و استوار ترین ایشان ازروی بزرگی وبزرگترین ایشان ازروی خوی و نیکو ترین ایشان ازروی و نیکوئی کردن و خوب ترین ایشان ازروی اولاد و افزدن ترین ایشان ازروی فرمانبرداری و شنیدن کلام حق و بلند ترین ایشان ازروی مرتبه و شیرین ترین ایشان ازروی سخن گفتن و پاکیزه ترین ایشان ازروی سلام گفتن و بزرگترین ایشان ازروی مرتبه و بلند ترین ایشان ازروی بزرگی و روشن ترین ایشان ازروی اسباب بزرگی وبلند ترین ایشان و کرده بلند ترین ازروی یاد کردن و وفاکننده ترین ایشان ازروی پیمان و راستگو ترین ایشان ازروی وعده و بیشترین ایشان ازروی سپاس گذاری و بلند ترین ایشان ازروی فرمان و نیکو ترین ایشان ازروی شکیبائی و نیکو ترین ایشان از روی هر خوبی و نزویک ترین ایشان ازروی آسانی و بلند ترین ایشان ازروی منزلت و بزرگترین ایشان ازروی جاه و مرتبه و استوار ترین ایشان ازروی برهان و گرانبار ترین ایشان ازروی ترازو و پیشترین ایشان ازروی ایمان و واضح ترین ایشان ازروی بیان و خوشگوترین ایشان ازروی زبان و ظاهر ترین ایشان ازروی دلیل۔</p>
+				<p class="lang transFR" style="display: none;" lang="fr" dir="ltr"><span>Ô Allah</span>, prie sur Saïdina et maoulana Mohammad, prophète de la décision et de la sagesse, le flambeau éblouissant, le particularisé par l'excellent caractère, l'ultime Messager, et le concerné par l'ascension, sur sa famille, ses compagnons et ses suiveurs qui ont pris son droit chemin; <span>Ô Allah</span>, fortifie par lui, la ligne de conduite des astres de l'Islam et les flambeaux de l'obscurité, qui sont les guides dans le noir de la nuit ténébreuse du doute. Prière perpétuelle et continue tant que les vagues s'entre-heurtent dans les mers, que les pèlerins viennent de tous les côtés pour tourner autour de la Kâ'ba, et les meilleurs saluts. Prières d'Allah sur Saïdina Mohammad, son noble Messager, son serviteur de choix, l'intercesseur des créatures au jugement dernier, le détenteur, de la position louable et du bassin d'abreuvage, l'exécuteur de la charge du
+message et de la communication générale et le particularisé par l'honneur de la recherche de la grande
+vertu. Prière d'Allah sur lui et sur sa famille, Prière perpétuelle et continue à perpétuité, durant les
+nuits et les jours. C'est lui le maître de ceux qui sont passés et ceux qui vont venir, le meilleur d'entre
+eux. Sur lui, la meilleure prière de ceux qui prient, le salut croissant de ceux qui le saluent, la plus douce évocation des évocateurs, la plus distinguée des prières d'Allah, la meilleur des prières d'Allah, la plus majestueuse des prières d'Allah, la plus belle des prières d'Allah, la plus parfaite des prières d'Allah, la plus abondante des prières d'Allah, la plus complète des prière d'Allah, la plus manifeste des prières d'Allah, la plus considérable des prières d'Allah, la plus vive des prières d'Allah, la plus douce des prières d'Allah, la plus bénie des prières d'Allah, la plus croissante des prières d'Allah, la plus développée des prières d'Allah, la plus accomplie des prières d'Allah, la plus rehaussée des prières d'Allah, la plus haute des prières d'Allah, la plus fréquente des prières d'Allah, la plus totale des prières d'Allah, la plus générale des prières d'Allah. la plus perpétuelle des prières d'Allah, la plus durable des prières d'Allah, la plus précieuse des prières d'Allah, la plus élevée des prières d'Allah, et la plus grande des prière d'Allah, sur, la plus distinguée des créatures d'Allah, la meilleure des créatures d'Allah, la plus majestueuse des créatures d'Allah, la plus belle des créatures d'Allah, la plus parfaite des créatures d'Allah, la plus complète des créatures d'Allah, et la créature la plus considérée par Allah, Messager d'Allah et prophète d'Allah, aimé d'Allah et intime d'Allah, causeur avec Allah et confident d'Allah, vertueux d'Allah et loyal d'Allah, choix d'Allah parmi les créatures d'Allah, sélection d'Allah dans la création d'Allah, élite d'Allah parmi les prophètes d'Allah. Le lien d'Allah; l'immunité d'Allah, le bienfait d'Allah, la clé de miséricorde d'Allah, le meilleur parmi les prophètes d'Allah, l'élu parmi les créatures d'Allah. L'acquéreur de ce qu'il souhaite, dans la hantise et dans le désir, le loyal dans ce qui lui a été octroyé, le plus noble des émissaires, le plus sincère des causeurs, le plus réussi des intercesseurs, le meilleur agrée à intercéder, l'honnête dans ce qu'on lui a confié, le sincère dans ce qu'il a communiqué, le brillant par l'ordre de son seigneur, l'habilité à assumer la responsabilité dont il a été chargé, le plus influent des messagers d'Allah vis à vis d'Allah, celui qui bénéficiera chez Allah, de la plus considérable position et de l'éminence. Le plus noble, des nobles prophètes d'Allah, qui constituent l'élite d'Allah, le plus aimé d'entre eux par Allah, le plus proche en rang d'Allah, la plus noble des créatures pour Allah, le plus favorisé et le plus agrée chez Allah. Le plus digne des hommes, le bénéficiaire de la place la plus importante, celui dont les charmes et la bienfaisance sont les plus complets, le meilleur des prophètes en grade, Celui dont la religion est la plus complète. Celui entre les prophètes, qui a les principes les plus nobles, la rhétorique et le discours les plus clairs. Le meilleur d'entre eux en, naissance, immigration, descendance, et compagnons. Le plus noble des hommes de par sa souche, et le plus honorable de par sa racine. Celui d'entre eux qui a l'âme la meilleure, le cœur le plus pur, les paroles les plus sincères, les actes les plus élevés, l'origine la plus sûre, l'engagement respecté, la gloire établie, le caractère noble, l'agissement excellent, et la branche noble. Le plus obéissant et qui écoute le mieux. Le plus haut en position, le plus doux en parlant, le plus élevé en salut, le plus majestueux en valeur.</p>
+				<p class="lang transTR" style="display: none;" lang="tr" dir="ltr">Allâhım, hüküm ve hikmet peygamberi, en parlak kandil, en büyük ahlâkla donatılmış mi’râc sâhibi son peygamber, efendimiz Muhammed’e ve âl-i’ne, ashâbına ve sapasağlam yolunda yürüyen tâbiîlerine de salât eyle. Allâhım, karanlığı şiddetli ve korkulu gecelerde kendileriyle yol bulunan, aynı zamanda karanlığın kandilleri gibi olan İslâm yıldızlarının yollarını efendimizle azametli kıl. efendimiz ve gönül sultânımız Muhammed’e, âl-i’ne ve ashâbına ve sapasağlam yolunda yürüyen tâbiîlerine denizde dalgalar coştukça, uzak yollardan gelen hacılar Kâbe’yi tavâf ettikçe ardı arkası kesilmeyen salâtla salât eyle. Salavâtı şerîfelerin ve selâmın en fazîletlisi, Allâh’ın yüce rasûlü, kulları arasında seçilmiş olan ve âhirette yaratılmışların şefaatçisi, Makâm-ı Mahmûd ve Havz-ı Kevser’in sâhibi, risâlet ve umûmî tebliğin yükünü taşıyan, en büyük ıslâh konusu, din ve dünyâ işlerinde gayret gösterme şerefiyle şereflenen, efendimiz Muhammed’in üzerine olsun.Allâh-u Teâlâ ona, âl-i’ne gece-gündüzler boyu devâm eden salâtla salât eylesin. Efendimiz Muhammed sallallâh-u aleyh-i vesellem, kendisinden önce yaratılanların ve kendisinden sonra yaratılacak olanların efendisi ve en fazîletlisidir. Salavât okuyanların en fazîletli salavâtı, selâm verenlerin verdiği selâmın en iyisi, zikredenlerin en güzel zikri, Allâh’ın salâtlarının en fazîletlisi, en güzeli, en mükemmeli, en bol olanı, en eksiksiz ve noksansız olanı, en açık olanı, en yüce olanı, en temiz olanı, en pâk olanı, en bereketlisi, en iyisi, en çok artıp çoğalanı, en yeterlisi, en parlak olanı, en ulvî olanı, en çok olanı, en toplu birikmiş olanı, en umûmî olanı, en devamlısı, en kalıcısı, en azîz olanı, en üstün olanı, en ulusu, en fazîletlisi, en güzeli, en değerlisi, en keremlisi, en mükemmeli, en tamâm olanı, en azâmetli olanı, Allâh’ın yarattıkları arasında en fazîletlisi ve yarattıklarının biriciği olan, efendimiz Muhammed’in üzerine olsun. Bütün bu salâtlar Allâh’ın yarattıklarının en fazîletlisi, en güzeli, en iyisi, en cömerdi, en mükemmeli, en tamâm olanı, Allâh katında en değerlisi, Allâh’ın rasûlü, nebîsi, habîbi, Allâh’ın seçip çıkarttığı ve Allâh’a devamlı münâcaatta bulunan rasûlü, Allâh’ın has dostu, isyandan uzak olan dostu, Allâh’ın emirlerini güvenle yerine getiren emîni, Allâh’ın kulları arasından seçtiği, yarattıkları arasından özenle çıkardığı, nebîleri arasından hâlis ve en seçkin olan kulu, efendimiz Muhammed’in üzerine olsun. Bütün bu salâtlar kulların kurtulabileceği Allâh’ın en sağlam bağı, Allâh’ın en mâsum kulu, Allâh’ın kullarına nîmeti, rahmet anahtarı, rasuller arasında seçilmiş olanı, Allâh’ın kulları arasında en güzîde olanı, istediğ ve istemediği her husûsta dileklerine ulaşanı, kendisine bağışlanan nîmetlerde ihlâs sâhibi, en yüce peygamber, en doğru sözlü, şefaat ettiğini kurtaran, şefaat etme hakkı verilenlerin en fazîletlisi, kendisine bırakılan emânetlerde emîn, tebliğ ettiği hususlarda doğru sözlü, rabbinin emrini açıklayan, verilen en ağır vazîfeyi yüklenen, Allâh’a ulaşmakta rasullerin Allâh’a en yakın olanı, kıyâmet günü makâm ve fazîlet itibâriyle peygamberlerin en yücesi, nebîler arasında en kerem sâhibi olan efendimiz Muhammed’in üzerine olsun. Yine bütün bu salâtlar Allâh katında en temiz, Allâh’a peygamberlerin en sevimli olanı, derece itibâriyle Allâh katında peygamberlerin en yakın olanı, en çok ecir ve sevâb alanı, kullarının en keremlisi, Allâh katında peygamberlerin en çok rızâya nâil olanı, derece ve makam itibâriyle insanların en yücesi, mekân itibâriyle onların en büyüğü, güzellik ve fazîlet bakımından insanların en mükemmeli, derece yönüyle nebîlerin en fazîletlisi, getirdiği kânunlar itibâriyle peygamberlerin en mükemmeli, soy itibâriyle nebîlerin en şereflisi, konuşması ve kendisine hitâb etmesi yönüyle peygamberler arasında tebliğini en iyi açıklayanı, doğum, hicret, soy ve ashâb yönüyle peygamberlerin en fazîletlisi, neseb itibâriyle insanların en üstün olanı, kabîle bakımından insanların enşerefli olanı, bütün insan ve peygamberlerin bizzay en hayırlı olanı, kalbi vesveselerden arındırılıp nur ve hikmet doldurulmak sûretiyle en temiz olanı, insanların ve peygamberlerin en doğru sözlüsü, ameli en temiz olanları olan efendimiz Muhammed’in üzerine olsun. Bütün bu salâtlar asâlet itibâriyle insanların en sâbit olanı, ahde vefâ yönüyle peygamberlerin en ileri olanı, şeref itibâriyle en oturaklısı, tabiatı en mükerrem olanı, yaratılışı en güzel, zürriyeti en temizleri, dinleyip itaat etme noktasında ilâhî emirlere en çok itaat edeni, makâmı en yûce olanı, ifâde yönüyle peygamberlerin en tatlı konuşanı, selâmı en bol vereni, değer itibâriyle onların en takdire lâyık olanı, üstün sıfatlarla insanların en çok övüleni, en güzel ahlâka sâhib olmakla en çok beğenileni, Mukarrebûn makâmındaki Allâh’a en yakın olan melekler arasında peygamberler içinde en çok zikredileni, ahde vefâ da insanların en ileride olanı, vaâd etmekte en sadâkatli olanı, insanların en çok şükredeni, yaptığı iş yönüyle en üstün olanı, sabrı en güzel olanı, hayır itibâriyle insanların en güzel olanı, kolaylığa en yakın olan, efendimiz Muhammed’in üzerine olsun. Ve tüm bu salâtlar mekân itibâriyle insanların ulaşamayacağı kadar en uzak olanı, şânı en yüce, delîli en sağlam, kıyâmet günü mîzanda insanlar arasında hayrı en ağır gelip de en tercih edileni, îmân yönüyle insanların ilki, muhâtablarına merâmını anlatmakta konuştuğunu en açık dile getireni, lisânı en fasîh olanı, delîl ve hüccet bakımından hükmünü dinletmekte insanların en üstünü, efendimiz Muhammed’in üzerine olsun.</p>
+				<p class="lang translitTR" style="display: none;" lang="en" dir="ltr">Allahümme salli ala Seyyidina ve Mevlana Muhammedin nebiyyil hükmi vel hikmetissiracil vehhacil mahsûsi bil hulûkıl azimi.Ve hatmir rusüli zil miraci ve ala alihi ve eshabihi ve etbaihis salikine. Ala menhecihil kavim. Feazimi Allahümme bihi minhace nücûmil islami. Ve mesabihiz zalamil mühteda bihim fi zulmeti leyliş şekkid daci. Salaten daimeten müstemirreten ma telatamet fi l ebhuril emvaci ve tafe bil beytil atiki min külli feccin amikinil hüccac.Ve efdalüs salati vetteslimi ala Seyyidüna Muhammedin resûlihil kerimi. Ve saff etihi minel ibadi ve şefi 'il halaikı fi l miadi. Sahibil makamil mahmudi vel havzil mevrûdin nahidı bia'bair. Risaleti vettebliğil eammi vel mahsûsi bi şerefi s siayeti fi sselahil-azami. Sallallahü aleyhi ve ala alihi salaten daimeten müstemirreted devami ala merril-leyali vel eyyami. Fehüve Seyyidül evveline vel ahirine ve efdalül evveline vel ahirine. Aleyhi efdalü salatil musalline. Ve ezka selamil müslimine. Ve etyebu zikriz zakirine. Ve efdalü salavatillahi. Ve ahsenü salavatillahi. Ve ecellü salavatillah. Ve ecmelu salavatillah. Ve ekmelü salavatillah. Ve esbağü salavatillahi. Ve etemmü salavatillahi. Ve ezharü salavatillahi. Ve azamü salavatillahi. Ve ezka salavatillahi. Ve etyabü salavatillahi. Ve ebrekü salavatillahi. Ve ezka salavatillahi.Ve enma Salavatillahi. Ve evfa salavatillahi.Ve esna salavatillahi ve a'la salavatillahi. Ve ekserü salavatillahi. Ve ecmaü salavatillahi.Ve eammü salavatillahi ve edvemü salavatillahi. Ve ebka salavatillahi. Ve eazzü salavatillahi. Ve erfa'u salavatillahi. Ve azamü salavatillahi. Ala efdali halkıllahi. Ve ahseni halkıllahi. Ve ecelli halkıllahi.Ve ekremi Halkıllahi. Ve ecmeli Halkıllahi. Ve ekmeli Halkıllahi. Ve etemmi Halkıllahi. Ve azami Halkıllahi. indellahi Resûlillahi. Ve Nebiyyillahi.Ve Habibillahi. Ve Safi yyillahi. Ve Neciyyillahi Ve Halilillahi. Ve Veliyyillahi. Ve Eminillahi. Ve Hiratillahi min Halkıllahi. Ve Nuhbetillahi min Beriyyetillahi. Ve Safvetillahi min Enbiyaillahi. Ve Urvetillahi. Ve Ismetillahi. Ve Nimetillahi Ve miftahi Rahmetillahi. El-Muhtari,min Rüsülillahi. El müntehebi min Halkıllahi.El faizi bil matlabi fi l merhebi vel mergabil muhlasi fi ma vehebe. Ekremi mebûsin esdakı kaailin encahi şafi 'in efdali müşeff ein el emini fi mestûdi es sadıkı fi ma belleğ es sadiki bi emri rabbihil mudtalii bima hummile ekrabi rüsülillahi ilallahi vesileten ve azamihim gaden indallahi menzileten ve fazileten ve ekremi enbiyaillahil kiramis safveti alellahi ve ehabbihim ilallahi ve ekrabihim zülfa ledallahi ve ekremil halkı alellahi ve ahzahüm ve erdahüm ledallahi ve Alennasi kadren ve azamihim mahallen ve ekmelihim mehasinen ve fadlen ve efdalil enbiyai dereceten ve ekmelihim şeriaten. Ve eşrefi l-enbıyaı nisaba ve ebyenihim beyanen ve hitaben ve efdalihim mevliden ve mühaciren ve itreten ve ashaben ve ekreminnasi erumeten ve eşrefi him cürsûmeten ve hayrihim nefsen ve atharihim kalben ve esdakıhim kavlen. Ve ezkahüm fi 'len ve esbe-tihim eslen ve evfahüm ahden ve emkenihim mecden ve ekremihim tab'an ve ahsenihim sun'an ve etyebihim fer'an ve ekserihim taaten ve sem'an ve a'lahüm makamen. Ve ehlahüm kelamen ve ezkahüm selamen. Ve ecellihim kadren ve azamihim fahren. Ve esnahüm fahren. Ve erfa'ihim fi l meleil a'la zikren. Ve evfahüm ahden. Ve asdakıhim va'den.Ve ekserihim şükren Ve a'lahüm emren. Ve ecmelihim sabren. Ve ahsenihim hayren.Ve akrabihim yüsren. Ve ebadihim mekanen. Ve azamihim şanen. Ve esbetihim bürhanen. Ve ercahihim mizanen. Ve evvelihim imanen. Ve evdahihim beyanen. Ve efsahihim lisanen. Ve ezherihim Sultanen.</p>
+				<p class="lang transUR" style="display: none;" lang="ur" dir="rtl"><span>الٰہی</span> درود بھیج اوپر سردار ہمارے اور مولٰے ہمارے محمدؐ کے جو نبی حکم اور حکمت کے ہیں چراغ روشن خاص کئے گئے ساتھ خصلت بزرگ کے اور ختم کرنے والے رسولوں کے صاحب معراج کے اور اوپر آل اُن کی کے اور اصحاب اُن کے کے اور پیرووں اُن کے جو چلنے والے ہیں اوپر راہ روشن سیدھی کے۔ پس کیسا بزرگ ہے الٰہی وہ راستہ روشن ستاروں اسلام کا اور چراغ اندھیری رات کے کہ راہ پائی گئی ہے ساتھ اس کے بیچ اندھیرے کے رات شک اندھیرے کی۔ ایسا درود کہ ہمیشہ جاری رہے جب تک کہ تلاطم ہو بیچ دریاؤں کے لہروں کا اور طواف کریں خانہ کعبہ میں پھر راہِ دُور سے حج کرنے والے۔ اور افضل درود اور سلام اوپر سردار ہمارے محمدؐ کے جو رسول اُس کے بزرگ ہیں اور برگزیدہ اس کے بندوں سے اور شفاعت کرنے والے خلقت کے بیچ قیامت کے صاحب مقامِ محمود کے اور حوض کے جہاں لوگ آ کر اُتریں گے اُٹھانے والے بھاری پوششوں رسالت کے۔ اور پہنچانے احکام عام اور خاص کے ساتھ شرف کوشش کرنے کے بیچ بھلائی بڑی کے۔ درود بھیج اللہ اوپر اُن کے اور اولاد اُن کی کے ایسا درود کہ ہمیشہ جاری رہے ہمیشہ اوپر جاری رہنے راتوں اور دنوں کے۔ پس وہ سردار ہیں اگلوں اور پچھلوں کے اور افضل ہیں اگلوں اور پچھلوں کے۔ اوپر اُن کے افضل درود ہو درود پڑھنے والوں کا۔ اور پاکیزہ سلام سلام بھیجنے والوں کا۔ اور بہت پاکیزہ ذکر ذکر کرنے والوں کا۔ اور افضل درودوں کا اللہ کے۔ اور بہتر درودوں کا اللہ کے۔ اور بزرگ درودوں کا اللہ کے۔ اور اچھا درودوں کا اللہ کے۔ اور کامل درودوں کا اللہ کے۔ اور پورا درودوں کا اللہ کے۔ اور زیادہ پورا درودوں کا اللہ کے۔ اور روشن درودوں کا اللہ کے۔ اور بزرگ درودوں کا اللہ کے۔ اور روشن تر درودوں کا اللہ کے۔ اور پاکیزہ درودوں کا اللہ کے۔ اور زیادہ برکت والا درودوں کا اللہ کے۔ اور پاکیزہ درودوں کا اللہ کے۔ اور پڑھنے والا درودوں کا اللہ کے۔ اور پورا درودوں کا اللہ کے۔ اور بلند درودوں کا اللہ کے اور برتر درودوں کا اللہ کے۔ اور بہت درودوں کا اللہ کے۔ اور جامع ترین درودوں کا اللہ کے۔ اور شامل ترین درودوں کا اللہ کے۔ اور ہمیشہ رہنے والا درودوں کا اللہ کے۔ اور باقی رہنے والا درودوں کا اللہ کے۔ اور زیادہ پیارا درودوں کا اللہ کے۔ اور بلند تر درودوں کا اللہ کے۔ بہت بڑا درودوں کا اللہ کے۔ اوپر افضل خلق اللہ کے۔ اور بہتر خلق اللہ کے۔ اور بزرگ تر خلق اللہ کے۔ اور کریم تر خلق اللہ کے۔ اور نیکو تر خلق اللہ کے۔ اور کامل تر خلق اللہ کے۔ اور تمام تر خلق اللہ کے۔ اور بزرگ تر خلق اللہ کے نزدیک اللہ کے۔ رسولل اللہ کے۔ اور نبی اللہ کے۔ اور حبیب اللہ کے۔ اور برگزیدہ اللہ کے۔ اور ہم کلام اللہ کے۔ اور دوست اللہ کے۔ اور یار اللہ کے۔ اور امین اللہ کے۔ اور برگزیدہ اللہ کے خلق اللہ کی سے۔ اور چُنے ہوئے اللہ کے مخلوق اللہ سے۔ اور بزرگزیدہ اللہ کے نبیوں اللہ سے۔ اور رسی اللہ کی۔ اور عصمت اللہ کی۔ اور نعمت اللہ کی۔ اور کُنجی رحمت اللہ کی۔ چُنے ہوئے رسولوں سے اللہ کے۔ انتخاب کئے ہوئے خلق اللہ سے پہنچنے والے ساتھ مطلب کے بیچ خوف اور اُمید کے۔ خاص کئے گئے بیچ اس کے کہ دیئے گئے۔ بزرگ تر بھیجئے گئے۔ بڑے سچے ہر کہنے والے سے۔ کامیاب تر شفاعت کرنے والے۔ بزرگ شفاعت قبول کئے گئے امین بیچ اس کے کہ امانت رکھی گئی سچے بیچ اس کے کہ پہنچایا ظاہر کرنے والے ساتھ امر رب اپنے کے ثابت قدم رہنے والے ساتھ اس کے کہ اُٹھائے گئے۔ نزدیک تر رسول اللہ کی طرف اللہ کے وسیلے سے اور بزرگ تر اُن کے کل قیامت کو نزدیک اللہ کے مرتبے اور بزرگی میں۔ اور بزرگ تر نبیوں اللہ بزرگ کے چُنے ہوئے نزدیک اللہ کے۔ اور زیادہ پیارے اُن کے طرف اللہ کے اور نزدیک تر اُنکے پاس اللہ کے۔ اور بزرگ تر خلق کے نزدیک اللہ کے۔ اور زیادہ نزدیک اِن سے زیادہ راضی اُن سے پاس اللہ کے۔ اور بُلند تر لوگوں سے قدر میں۔ اور بزرگ اُن سے مرتبہ میں اور کامل اُن سے نیکی اور بزرگی میں اور بزرگ تر نبیوں کے درجہ میں۔ اور کامل تر اُن کے شریعت میں اور بزرگ تر نبیوں کے اصل میں اور روشن تر اُن سے بیان اور کال میں اور بزرگ ترا اُن سے جائے پیدائش اور جائے ہجرت اور اولاد اور اصحاب میں اور بزرگ تر لوگوں سے اصل میں اور شریف تر اُن سے جماعت میں اور بہترین اُن سے جان میں اور پاک تر اُن سے دل میں اور بڑے سچے اُن سے قول میں اور بڑے پاک اُن سے فعل میں اور زیادہ پکے اُن سے اصل میں اور بڑا پورا کرنے والے اُن سے عہد کو اور زیادہ پکے اُن سے بزرگی میں اور بزرگ تر اُن سے طبیعت میں اور بہت اچھے اُن سے نیکی میں اور پاک تر اُن سے اولاد میں اور زیادہ اُن سے بندگی میں اور سننے میں اور بلند تر اُن سے مقام میں اور شریں تر اُن سے کلام میں اور پاکیزہ تر اُن سے سلام میں اور بزرگ تر اُن سے قدر میں اور بزرگ تر اُن سے فخر میں اور روشن تر اُن سے فخر میں اور بُلند تر اُن سے بیچ گروہ فرشتوں کے ذکر میں اور بڑے سچے اپن سے وعدے میں اور زیادہ اُن سے شکر گزاری میں اور بُلند تر اُن سے فرمان میں اور نیک تر اپن سے صبر میں اور سب سے اچھے نیکی میں اور قریب تر اُن سے آسانی میں اور بُلند تر اُن سے مکان میں اور بزرگ تر اُن سے شان میں اور استوار تر اُن سے دلیل میں اور غالب تر اُن سے میزان میں اور اول اُن سے ایمان میں اور واضح تر اُن سےبیان میں اور شیریں تر اُن سے زبان میں اور ظاہر تر اُن سے دلیلِ رسالت میں۔</p>
+			 
+			</div>
+</div>		
+		
+		
+<br/><br/><br/><br/><br/>
+		<!-- Bottom Navbar -->
+		<nav class="navbar navbar-dark bg-primary navbar-expand fixed-bottom d-md-none d-lg-none d-xl-none p-0">
+			<ul class="navbar-nav nav-justified w-100">
+				<li class="nav-item">
+					<a href="index2.html" class="nav-link text-center">
+					<svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-arrow-left-square" viewBox="0 0 16 16">
+					  <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+					</svg>
+						<span class="small d-block">Back</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="index1.html#Part1Dua" class="nav-link text-center">
+
+						
+					<svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+					  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+					  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+					</svg>					
+						
+						<span class="small d-block">Short Dua</span>
+					</a>
+				</li>
+				<li class="nav-item dropup">
+					<a href="index4.html" class="nav-link text-center" >
+					<svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-arrow-right-square" viewBox="0 0 16 16">
+					  <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+					</svg>
+						<span class="small d-block">Next</span>
+					</a>
+					<!-- Dropup menu for profile -->
+				</li>
+			</ul>
+		</nav>
+		
+		
+		
+
+		<input name="animation" type="hidden">
+		<script src="assets/web/assets/jquery/jquery.min.js"></script>
+		<script src="assets/popper/popper.min.js"></script>
+		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/smoothscroll/smooth-scroll.js"></script>
+		<script src="assets/tether/tether.min.js"></script>
+		<script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+		<script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+		<script src="assets/dropdown/js/nav-dropdown.js"></script>
+		<script src="assets/dropdown/js/navbar-dropdown.js"></script>
+		<script src="assets/theme/js/script.js"></script>
+		<script src="assets/js/scripts_v05.js"></script>
+		<!--<div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div> -->
+	</body>
+</html>
