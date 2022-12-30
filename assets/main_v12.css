@@ -1,0 +1,1034 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css") ;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+@font-face { font-family: 'Islamic'; src: url('Fonts/PDMS_IslamicFont.ttf'); } 
+
+@font-face { font-family: 'Farsi-Font'; src: url('Fonts/Zar.ttf'); } 
+
+ @font-face { font-family: 'Indopak'; src: url('Fonts/PDMS_Saleem_QuranFontQEShip.ttf') format("opentype");
+font-weight: 100;} 
+
+/*@font-face { font-family: 'Islamic'; src: url('Fonts/PDMS_IslamicFont.ttf'); } 
+
+/* Fixed sidenav, full height */
+
+.sidenav {
+    height: 100%;
+    width: 0px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.2s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* Style the sidenav links and the dropdown button */
+
+.sidenav a,
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    top: 0;
+    left: 0;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 45px;
+    margin-left: 192px;
+}
+
+
+/* On mouse-over */
+
+.sidenav a:hover,
+.dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+#textOptions {
+    color: #f1f1f1;
+    cursor: default;
+}
+
+#textOptions:hover {
+    color: #f1f1f1;
+}
+
+
+/* Main content */
+
+.main {
+    transition: margin-left .3s;
+    /* Same as the width of the sidenav */
+    /* font-size: 20px; /* Increased text to enable scrolling */
+    display: none: padding: 20px;
+}
+
+
+/* Add an active class to the active dropdown button */
+
+.active {
+    background-color: #800020;
+    color: white;
+}
+
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+
+.dropdown-container {
+    display: none;
+    font-size: 20px;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+
+/* Optional: Style the caret down icon */
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.speaking {
+    background: #fae1e1;
+}
+
+
+/* Site Wrapper - Everything that isn't navigation 
+.site-wrap {
+  /* Critical position and size styles */
+
+min-height: 100%;
+min-width: 100%;
+background-color: white;
+
+/* Needs a background or else the nav will show through */
+
+position: relative;
+top: 0;
+bottom: 100%;
+left: 0;
+z-index: 1;
+
+/* non-critical apperance styles */
+
+padding: 4em;
+
+/* background-image: linear-gradient(135deg, rgb(254,255,255) 0%,rgb(221,241,249) 35%,rgb(160,216,239) 100%); */
+
+background-size: 200%;
+
+}
+*/
+/* ===================================================================================================================== 
+
+
+ @font-face { font-family: GeezaPro; src: url('Fonts/GeezaPro.ttc'); }
+ @font-face { font-family: Quran; src: url('Fonts/Mishafi.ttc'); }
+
+
+/* ==
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+.droid-arabic-naskh{font-family: 'Droid Arabic Naskh', serif;}
+== */
+
+
+
+*/
+
+
+
+html,
+body.arabicText {
+    text-size-adjust: auto;
+   /*  font-family: 'Droid Arabic Naskh';
+    /*     font-family: 'Quran'; */
+    
+  
+}
+.mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style display-5:hover {
+    color: aqua;
+}
+
+
+.header {
+    border-bottom: 5px;
+    border-bottom-color: #800020;
+    border-bottom-style: solid;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+h1 {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: 1000;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 90%;
+    margin-bottom: 0px;
+}
+.header h2 {
+    text-align: center;
+    font-size: 55px;
+    font: 'Montserrat', sans-serif;
+    color: #262626;
+    line-height: 90%;
+    margin: 12px 0px 10px 0px;
+}
+.header h3 {
+    text-align: center;
+    font-family: Islamic;
+    font-size: 50px;
+    color: #800020;
+    line-height: 90%;
+    margin: 24px 0px 0px 0px;
+}
+.part_english p {
+    text-align: center;
+    font-size: 5px;
+    color: white;
+    margin: 0;
+}
+
+/* audio{
+ display: block; 
+ position: fixed;
+    width: 95%;
+ left: 50%;
+    bottom: 0;
+    border-bottom: 5px;
+    border-bottom-color: white;
+
+    transform: translateX(-50%);
+}
+*/
+
+/* Paragaph font type --------------------------------------------------------------------- */
+#MyP {
+    font-family: Islamic;
+    padding: 3vw;
+      
+}
+
+/* Font properties of text ---------------------------------------------------------------- */
+mondua {
+    font-size: 35px;
+    color: black;
+    padding: 30px 0 0 0;
+}
+
+input[type=radio] {
+    border: 0px;
+    vertical-align: middle;
+    margin-right: 0;
+    width: 100%;
+    height: 1.5em;
+}
+
+
+p {
+    font-size: 20px;
+    /*40*/
+    
+    font-weight: 50;
+    /*50 */
+    
+    line-height: 175%;
+    /*175 */
+    
+       
+}
+p.FAQ {
+    font-size: 18px;
+}
+p.devText {
+    font-size: 15px;
+    border-top-color: black;
+    border-top-style: double;
+    border-top-width: 2px;
+}
+p > span {
+    color: #800020;
+}
+p.trans {
+    margin-bottom: 10px;
+    border-bottom-width: 1px;
+    border-top-color: grey;
+    border-bottom-style: ridge;
+}
+
+p.translit {
+    font-family: 'Times New Roman' !important;
+    margin-bottom: 10px;
+	text-align: justify;
+word-spacing: 0.06em;
+        margin-bottom: 10px;
+    border-bottom-width: 1px;
+    border-top-color: grey;
+    border-bottom-style: ridge;
+}
+
+p.transTR {
+    font-family: 'Times New Roman' !important;
+    margin-bottom: 10px;
+word-spacing: 0.06em;
+        margin-bottom: 10px;
+    border-bottom-width: 1px;
+    border-top-color: grey;
+    border-bottom-style: ridge;
+}
+
+p.translitTR {
+    font-family: 'Times New Roman' !important;
+    margin-bottom: 10px;
+word-spacing: 0.06em;
+    margin-bottom: 10px;
+    border-bottom-width: 1px;
+    border-top-color: grey;
+    border-bottom-style: ridge;
+}
+
+p.transFR {
+    font-family: 'Times New Roman' !important;
+    margin-bottom: 10px;
+word-spacing: 0.06em;
+    margin-bottom: 10px;
+    border-bottom-width: 1px;
+    border-top-color: grey;
+    border-bottom-style: ridge;
+}
+
+p.transID {
+    font-family: 'Times New Roman' !important;
+    margin-bottom: 10px;
+word-spacing: 0.06em;
+    margin-bottom: 10px;
+    border-bottom-width: 1px;
+    border-top-color: grey;
+    border-bottom-style: ridge;
+}
+
+
+p.transUR {
+    font-family: 'Noto Nastaliq Urdu', serif !important;
+    margin-bottom: 10px;
+    font-weight: 100;
+word-spacing: 0.06em;
+    margin-bottom: 10px;
+    
+    border-bottom-width: 1px;
+    border-top-color: grey;
+    border-bottom-style: ridge;
+}
+
+
+p.transFA {
+    font-family: 'Farsi-Font', serif !important;
+    margin-bottom: 10px;
+word-spacing: 0.06em;
+     font-weight: 100;
+
+    margin-bottom: 10px;
+    border-bottom-width: 1px;
+    border-top-color: grey;
+    border-bottom-style: ridge;
+}
+
+p.thirdsQuarters {
+    direction: rtl;
+    font-size: 35px;
+    /* remove */
+    
+    margin: 0 !important;
+    top: -20px;
+    color: #800020;
+}
+p.arabicText {
+    /* margin-bottom: 10px;	margin:-10px;
+ */
+    
+    direction: rtl;
+    font-size: 35px;
+    /* remove */
+    text-align: center;
+    margin: 0 !important;
+    top: -20px;
+	border-bottom-width: 1px;
+    border-top-color: grey;
+    border-bottom-style: ridge;
+}
+p.numbers_names {
+    color: #800020;
+    font-weight: 500;
+    margin-top: -10px;
+    position: relative;
+    width: 25px;
+    vertical-align: middle;
+    text-align: center;
+    /*
+
+
+    
+    border-radius: 0.25em;
+    background: #800020;*/
+    
+    font-size: 1.25em;
+    line-height: 50%;
+    margin: 0;
+    top: 20px;
+    opacity: 100%;
+}
+p.numbers {
+    color: #800020;
+    font-weight: 500;
+    margin-top: -10px;
+    position: static;
+    width: 25px;
+    vertical-align: middle;
+    text-align: center;
+
+    /*
+      
+
+
+    
+    border-radius: 0.25em;
+    background: #800020;*/
+    
+    font-size: 1.25em;
+    line-height: 50%;
+    margin: 0;
+    top: 20px;
+    opacity: 100%;
+    padding-top: 6px;
+    padding-bottom: 5px;
+}
+p.numbers > span {
+    color: #c9c9c9;
+    cursor: pointer;
+    content: '\25B6U+FE0E';
+    z-index: -2;
+    -webkit-text-stroke: 1px #c9c9c9;
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+}
+p.numbers > span:hover {
+    color: black;
+    -webkit-text-stroke: 1px black;
+}
+
+/* Font properties of tasmiyah ------------------------------------------------------------ */
+.tasmiyah {
+    text-align: center;
+    font-family: Islamic;
+    font-size: 28px;
+    padding: 2px 0 2px 0;
+    padding-top: 10px;
+    margin: 0px;
+}
+
+/* Font properties of parts --------------------------------------------------------------- */
+.part h3 {
+    text-align: center;
+    font-family: Islamic;
+    font-size: 40px;
+    color: #800020;
+    padding: 63px 0px 0px 0px;
+    line-height: 100%;
+    margin: 0px;
+}
+
+/* Font properties of footer -------------------------------------------------------------- */
+.footer {
+    background-color: #800020;
+    color: white;
+    opacity: 1;
+    text-align: center;
+    width: 100%;
+}
+
+/* Font properties of quarters/thirds ----------------------------------------------------- */
+.en-day {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 1000;
+    display: block;
+    padding: 0;
+    margin: 0;
+    border-bottom: 0;
+}
+.ar-day {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 1000;
+    display: block;
+    padding: 0;
+    margin: 0;
+    border-bottom: 0;
+}
+
+/* Translation toggle properties --------------------------------------------------------------------- */
+.sliderWrapper {
+    display: inline-block;
+    margin: 12px 12px 12px 12px;
+    postion: relative;
+}
+.sliderWrapper div {
+    display: inline-block;
+    line-height: 20px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+    padding: 0px;
+    width: 54px;
+    height: 28px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    display: none;
+}
+
+/* The slider */
+.toggle {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 34px;
+    background-color: #d7d7d7;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.toggle:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 1px;
+    border-radius: 50%;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .toggle {
+    background-color: #800020;
+}
+input:focus + .toggle {
+    box-shadow: 0 0 1px #800020s;
+}
+input:checked + .toggle:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/*.sliderContainer{
+    padding-top: 50px;
+    width: 225px;
+    align-content: center;
+    color: white;
+}
+
+.slider {
+    
+    width: 180px;
+    align-content: center;
+    text-align: center;
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover 
+    transition: opacity .2s;
+}
+*/
+// COLORS
+@white: hsla(0,
+0,
+100%,
+1);
+@darkgray: hsla(0,
+0,
+24%,
+1);
+@base-gray: hsla(203,
+15.8537%,
+32.1569%,
+1.0000);
+@gray-saturate-85: saturate(@base-gray,
+85%);
+@button-blue: lighten(@gray-saturate-85,
+7%);
+// TRANSITION SPEEDS
+@transition-fast: 0.15s;
+// ON OFF SWITCH
+@switch-height: 22px;
+@switch-width: 55px;
+@switch-group-height: @switch-height + 2;
+@toggle-group-height: @switch-height + 5;
+// MIXINS
+.box-sizing (@sizing: border-box) {
+    -moz-box-sizing: @sizing;
+    -webkit-box-sizing: @sizing;
+    box-sizing: @sizing;
+}
+.transition (@attr,
+@time,
+@ease) {
+    -webkit-transition: @attr @time @ease;
+    -o-transition: @attr @time @ease;
+    -moz-transition: @attr @time @ease;
+    transition: @attr @time @ease;
+}
+.border-radius (@radius: 4px;
+) {
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+    border-radius: @radius;
+}
+
+/* ON/OFF Switch */
+.onoffswitch {
+    position: relative;
+    width: @switch-width;
+    display: inline-block;
+    font-size: 80%;
+    .onoffswitch-label {
+        display: block;
+        overflow: hidden;
+        cursor: pointer;
+        border: 1px solid darken(@white, 10%);
+        .border-radius(@switch-height - 2);
+        margin: 0;
+    }
+    
+    .onoffswitch-inner {
+        width: 200%;
+        margin-left: -100%;
+        .transition(margin,
+        @transition-fast,
+        ease-in-out);
+        &:before,
+        &:after {
+            float: left;
+            width: 50%;
+            height: @switch-group-height;
+            padding: 0;
+            line-height: @switch-group-height;
+            font-size: 80%;
+            color: @white;
+            font-weight: normal;
+            .box-sizing(border-box);
+        }
+        &:before {
+            content: "ON";
+            padding-left: 10px;
+            background-color: @button-blue;
+            color: @white;
+        }
+        &:after {
+            content: "OFF";
+            padding-right: 10px;
+            background-color: darken(@white, 2%);
+            color: @darkgray;
+            text-align: right;
+        }
+    }
+    
+    .onoffswitch-switch {
+        width: @switch-height;
+        height: @switch-height;
+        margin: 0;
+        background: @white;
+        box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+        .border-radius(50%);
+        position: absolute;
+        top: 2px;
+        bottom: 0;
+        right: @switch-height + 13;
+        .transition(right,
+        @transition-fast,
+        ease-in-out);
+    }
+}
+.toggle-group {
+    position: relative;
+    height: @toggle-group-height;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    top: 50%;
+    left: 20px;
+    margin-top: -@toggle-group-height/2;
+    input[type=checkbox] {
+        position: absolute;
+        left: 10px;
+        &:checked ~ .onoffswitch .onoffswitch-label .onoffswitch-inner {
+            margin-left: 0;
+        }
+        &:checked ~ .onoffswitch .onoffswitch-label .onoffswitch-switch {
+            right: 1px;
+            box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+        }
+        &:focus ~ .onoffswitch {
+            outline: thin dotted #333;
+            outline: 0;
+        }
+    }
+    
+    label {
+        position: absolute;
+        cursor: pointer;
+        padding-left: @switch-width + 10;
+        display: inline-block;
+        text-align: left;
+        line-height: @switch-group-height;
+        width: 100%;
+        z-index: 1;
+        height: @switch-group-height;
+        font-weight: 200;
+    }
+}
+
+/* ==== Accessibility ===== */
+.aural {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    &:focus {
+        clip: rect(0, 0, 0, 0);
+        font-size: 1em;
+        height: auto;
+        outline: thin dotted;
+        position: static !important;
+        width: auto;
+        overflow: visible;
+    }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    
+    position: fixed;
+    /* Stay in place */
+    
+    z-index: 99999;
+    /* Sit on top */
+    
+    padding-top: 0px;
+    /* Location of the box */
+    
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    
+    height: 100%;
+    /* Full height */
+    
+    overflow: auto;
+    /* Enable scroll if needed */
+    
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 100px auto auto auto;
+    padding: 0;
+    height: auto;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+	padding-top: 0px;
+	padding-bottom: 4px;
+	padding-right: 8px;
+	margin-bottom: 3px;
+}
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-header {
+    padding-top: 3px;
+	
+	margin-top: 5px;
+    background-color: #800020;
+    color: white;
+}
+.modal-body {
+    padding: 2px 16px;
+}
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #800020;
+    color: white;
+}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 10 0 10 10;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 10px;
+    background-color: white;
+    max-height: 0;
+    margin-bottom: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+
+.fa {
+    margin: 0;
+    position: fixed;
+    top: 31px;
+    color: #4a5764;
+    border: solid #4a5764 !important;
+    border-width: 1px !important;
+    border-radius: 4px;
+    padding:2px;
+    background: #F8F8F8	;
+    z-index: 9999;
+    left: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+}
+
+/* ===================================================================================================================== 
+
+
+        /* 
+
+Table styles for resizing font
+
+*/
+.column {
+    float: left;
+    padding: 8px;
+    height: auto;
+}
+.left {
+    width: 35%;
+    text-align: right;
+}
+.left h5 {
+    font-size: 2em;
+    margin-bottom: 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.right h5 {
+    font-size: 2em;
+    margin-bottom: 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+.right {
+    width: 35%;
+    text-align: left;
+}
+.middle {
+    width: 20%;
+    vertical-align: middle;
+}
+.middle h5 {
+    font-size: 1em;
+    margin-bottom: 0;
+    vertical-align: middle;
+    padding-top: 5px;
+    word-wrap:  normal;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+ 
+
+/* ===================================================================================================================== 
+
+
+        /* 
+
+Radio buttons style
+*/
+
+
+
+<style>
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: -6px;
+  right: 12px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #800020;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+</style>
